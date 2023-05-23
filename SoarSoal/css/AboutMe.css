@@ -1,10 +1,8 @@
-/* FONT AWESOME CDN */
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
 
 /* GOOGLE FONTS */
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 
-/* DEFINE CSS VARIABLE */
 :root {
   /* height header */
   --app-header-height: 3rem;
@@ -108,7 +106,6 @@ img {
   border-radius: 50%;
 }
 
-/* CSS COMPONENTS CLASS */
 .section {
   margin-bottom: 40px;
   padding: 2rem 0 4rem;
@@ -132,8 +129,6 @@ img {
 .its-me {
   color: var(--app-color);
 }
-
-/* CSS LAYOUTIN CLASS */
 
 .container {
   max-width: 768px;
@@ -206,7 +201,6 @@ img {
 }
 
 /* Home */
-
 .home-container {
   gap: 1rem;
 }
@@ -249,8 +243,8 @@ img {
 }
 
 .home-title {
-  font-size: var(--app-big-font-size);
-  margin: 1rem 0 1.2rem;
+  font-size: 2.2rem;
+  margin: 1.5rem 0 1.5rem;
 }
 
 .home-description {
@@ -262,6 +256,7 @@ img {
   max-width: 100%;
   position: relative;
 }
+
 .home-contact > div.home-contact-message {
   display: inline-block;
   width: 100%;
@@ -271,6 +266,7 @@ img {
   border-radius: 30px;
   background-color: white;
 }
+
 .home-contact > a > div {
   position: absolute;
   display: inline-block;
@@ -286,7 +282,6 @@ img {
 }
 
 /* Button */
-
 .button {
   display: inline-block;
   background-color: var(--app-color);
@@ -427,7 +422,6 @@ a.pemro-link:active {
 }
 
 /* Contact Me */
-
 .contact-content {
   background-color: var(--app-input-color);
   border-radius: 0.5rem;
@@ -495,8 +489,6 @@ a.pemro-link:active {
 .footer-social-link {
   color: white;
 }
-
-/* MEDIA QUERY */
 
 /* For large devices */
 @media screen and (min-width: 1024px) {
@@ -699,14 +691,6 @@ a.pemro-link:active {
   top: -80px; 
   visibility: hidden;
 } 
-
-/* .error-messages {
-  margin-top: 5%;
-  text-align: center;
-  color: rgb(255, 0, 0);
-  font-size: 14px;
-  font-weight: bold;
-} */
 
 .error-message {
   color: red;
