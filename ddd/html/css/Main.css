@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: 100%;
+}
+
+main {
+    height: 2000px;
+    background-color: #daecfd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#company-name {
+    width: max-content;
+    position: absolute;
+    color: white;
+    font-size: 80px;
+    font-family: 'Yellowtail', cursive;
+    left: 50%;
+    top: 40%;
+    transform: translateX(-50%);
+    user-select: none;
+}
+
+.slider {
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    z-index: 7;
+    margin-left: -1px;
+    align-self: flex-start;
+
+}
+
+.middle {
+    top: 330px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.navigation {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.bar {
+    height: 8px;
+    width: 30px;
+    margin: 6px;
+    cursor: pointer;
+    background-color: #ddd;
+    opacity: 0.5;
+    border-radius: 10px;
+    transition: all .4 ease;
+} 
+
+.bar:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+
+input[name="point"] {
+    position: absolute;
+    visibility: hidden;
+}
+
+.slides {
+    width: 300%;
+    height: 100%;
+    display: flex;
+}
+
+.slide {
+    width: 35%;
+    transition: all .6s ease;
+}
+
+
+#point-1:checked~.s1 {
+    margin-left: 0;
+}
+
+#point-2:checked~.s1 {
+    margin-left: -35%;
+}
+
+#point-3:checked~.s1 {
+    margin-left: -70%;
+}
+
+.discoveries-container {
+    margin-top: 550px;
+    justify-content: center;
+}
+
+.text-with-lines {
+    position: relative;
+    text-align: center;
+}
+  
+.text-with-lines p {
+    position: relative;
+    display: inline-block;
+    padding: 0 20px;
+    font-size: 24px;
+}
+  
+.text-with-lines p::before,
+.text-with-lines p::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: calc(310%); 
+    height: 2px;
+    background-color: black;
+}
+  
+.text-with-lines p::before {
+    right: 100%;
+    margin-right: 20px;
+}
+  
+.text-with-lines p::after {
+    left: 100%;
+    margin-left: 20px;
+}
+
+.discoveries-helper{
+    background-color: #daecfd;
+    position: relative;
+    width: 15px;
+    z-index: 3;
+    top: 40px; 
+    height: 30px;
+    right: 15px;
+}
+
+.photo-container{
+    text-align: center;
+}
+
+.first-row {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+  
+.first-row .cardBox {
+    margin: 0 10px;
+}
+
+.cardBox {
+    width: 250px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+  
+.info-card1,
+.info-card2,
+.info-card3,
+.info-card4 {
+    width: 95%;
+    height: 95%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #ffffff;
+    padding: 20px;
+    cursor: pointer;
+    transition: filter 0.3s ease-in-out;
+    background-position: center;
+    background-size: cover;
+    margin-top: 6%;
+}
+  
+.info-card1 {
+    background-image: url("https://st4.depositphotos.com/14883968/21323/i/600/depositphotos_213239274-stock-photo-landscape-beautiful-piva-lake-mountains.jpg");
+}
+  
+.info-card2 {
+    background-image: url("https://st2.depositphotos.com/1591133/8812/i/600/depositphotos_88120646-stock-photo-idyllic-summer-landscape-with-clear.jpg");
+}
+  
+.info-card3 {
+    background-image: url("https://st.depositphotos.com/1000633/57261/i/600/depositphotos_572618664-stock-photo-panoramic-view-lake-moraine-banff.jpg");
+}
+
+.info-card4 {
+    background-image: url("https://st.depositphotos.com/1035350/1831/i/600/depositphotos_18311415-stock-photo-ginkaku-ji-temple-in-kyoto.jpg");
+}
+  
+.cardBox:hover .info-card1,
+.cardBox:hover .info-card2,
+.cardBox:hover .info-card3,
+.cardBox:hover .info-card4 {
+    filter: brightness(0.8); /* Увеличение темноты изображения */
+}
+  
+.info-card1 .h4,
+.info-card2 .h4,
+.info-card3 .h4,
+.info-card4 .h4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: 800;
+    pointer-events: none;
+    opacity: 1;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Добавлено тень */
+}
+  
+.info-card1 .content .h3,
+.info-card2 .content .h3,
+.info-card3 .content .h3,
+.info-card4 .content .h3 {
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+  
+.info-card1 .content p,
+.info-card2 .content p,
+.info-card3 .content p,
+.info-card4 .content p {
+    font-size: 14px;
+    line-height: 1.4em;
+}
+  
+.info-card1 .content,
+.info-card2 .content,
+.info-card3 .content,
+.info-card4 .content {
+    transform: translateY(100%);
+    opacity: 0;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+    padding: 20px;
+}
+  
+.info-card1:hover .content,
+.info-card2:hover .content,
+.info-card3:hover .content,
+.info-card4:hover .content {
+    transform: translateY(0);
+    opacity: 1;
+}
+  
+.info-card1:hover .h4,
+.info-card2:hover .h4,
+.info-card3:hover .h4,
+.info-card4:hover .h4 {
+    opacity: 0;
+}
+  
+@keyframes glowing_401 {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}

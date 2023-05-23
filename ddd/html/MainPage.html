@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> SoarSoal </title>
+  <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="./css/Main.css" />
+  <link rel="stylesheet" href="./css/Footer.css" />
+  <link rel="stylesheet" href="./css/Buttons.css" />
+  <link rel="stylesheet" href="./css/Header.css" />
+  <link rel="stylesheet" href="./css/Burger.css" />
+  <script src="https://cdn.jsdelivr.net/npm/three@0.131.2/build/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="burger-menu">
+        <input id="menu-toggle" type="checkbox" />
+        <label class="menu-btn" for="menu-toggle">
+          <span></span>
+        </label>
+      
+        <ul class="menubox">
+          <div class="title"><h1>NAVIGATION</h1></div>
+          <li><a class="menu-item" href="OurServices.html">Our Services</a></li>
+          <li><a class="menu-item" href="AboutMe.html">About Me</a></li>
+          <li><a class="menu-item" href="#">News</a></li>
+          <li><a class="menu-item" href="#">Project history</a></li>
+          <li><a class="menu-item" href="#contact">Contact Us </a></li>
+        </ul>
+      </div>
+
+      <ul>
+        <li>
+          <a class="sections" href="#discoveries">Discoveries</a>
+        </li>
+        <li>
+          <a class="sections" href="#culture">Culture</a>
+        </li>
+        <li>
+          <a class="sections" href="#adventures">Adventures</a>
+        </li>
+      </ul>
+      <img id="main-logo" src="../img/logo.png" />
+    </nav>
+  </header>
+  <main>
+    <div class="slider middle">
+      <div class="slides">
+        <input type="radio" name="point" id="point-1" checked />
+        <input type="radio" name="point" id="point-2" />
+        <input type="radio" name="point" id="point-3" />
+        <h1 id="company-name">SoarSoal</h1>
+        <div class="slide s1" id="slide-1"></div>
+        <div class="slide" id="slide-2"></div>
+        <div class="slide" id="slide-3"></div>
+      </div>
+      <div class="navigation">
+        <label for="point-1" class="bar"></label>
+        <label for="point-2" class="bar"></label>
+        <label for="point-3" class="bar"></label>
+      </div>
+    </div>
+    <div class="discoveries-container">
+      <div class="discoveries-helper"></div>
+      <div class="text-with-lines">
+        <p id="discoveries" class="scroll-target">Discoveries</p>
+        <br>
+        <p>Discoveries</p>
+      </div>
+    <div class="photo-container">
+      <div class="first-row">
+        <div class="cardBox">
+          <div class="info-card1">
+            <div class="content">
+              <div class="h3">Piva (river)</div>
+              <p>This is Pradeep Saran, your tech mate!!! I love you all. Lets make this world a better place for all of us. Keep prospering...Keep learning!!!</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="cardBox">
+          <div class="info-card2">
+            <div class="content">
+              <div class="h3">How's it goin Fam ?</div>
+              <p>This is Pradeep Saran, your tech mate!!! I love you all. Lets make this world a better place for all of us. Keep prospering...Keep learning!!!</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="cardBox">
+          <div class="info-card3">
+            <div class="content">
+              <div class="h3">How's it goin Fam ?</div>
+              <p>This is Pradeep Saran, your tech mate!!! I love you all. Lets make this world a better place for all of us. Keep prospering...Keep learning!!!</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="cardBox">
+          <div class="info-card4">
+            <div class="content">
+              <div class="h3">How's it goin Fam ?</div>
+              <p>This is Pradeep Saran, your tech mate!!! I love you all. Lets make this world a better place for all of us. Keep prospering...Keep learning!!!</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <button class="cta">
+        <span><a href="OurServices.html">See more info</a></span>
+        <svg viewBox="0 0 13 10" height="10px" width="15px">
+          <path d="M1,5 L11,5"></path>
+          <polyline points="8 1 12 5 8 9"></polyline>
+        </svg>
+      </button>
+    </div>
+  </main>
+  <footer>
+    <div class="footer">
+      <div class="col-1">
+        <h3>Useful Links:</h3>
+        <a href="OurServices.html">Our Services</a>
+        <a href="AboutUs.html">About Us</a>
+        <a href="">News</a>
+        <a href="">Project History</a>
+        <a href="">Our team</a>
+      </div>
+      <div class="col-2">
+        <h3>Notifications:</h3>
+        <form> 
+          <input autocomplete="off" name="text" class="input" placeholder="Enter your email adress" />  
+          <div class="error-messages"></div>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+      <div class="col-3">
+        <h3>
+          <div id="contact">Contact Us:</div>
+        </h3>
+        <ul>
+          <li>Phone: (xxx)xxx-xx-xx</li>
+          <li>Email: info@example.com</li>
+        </ul>
+        <div class="SocialMedia">
+          <a target="_blank" href="https://www.instagram.com/_tymur.d/" class="fa fa-instagram"></a>
+          <a target="_blank" href="https://www.facebook.com/profile.php?id=100016057680551" class="fa fa-facebook"></a>
+          <a target="_blank" href="#" class="fa fa-snapchat-ghost"></a>
+          <a target="_blank" href="https://github.com/TymurDatsenko" class="fa fa-github"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="./js/Main.js"></script>
+</body>
+</html>
