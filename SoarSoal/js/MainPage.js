@@ -33,38 +33,38 @@ function rotate360(imageUrl, slideId) {
   rotate360("https://upload.wikimedia.org/wikipedia/commons/2/2c/K%C3%B6ln_Wallraffplatz_%E2%80%93_360%C2%B0_Panorama_aus_der_Luft_%E2%80%93_Dezember_2020.jpg", "slide-2");
   rotate360("https://upload.wikimedia.org/wikipedia/commons/0/0a/Cologne_Cathedral_at_Night_%E2%80%93_360%C2%B0_panorama_from_high_up_%E2%80%93_June_2021.jpg", "slide-3");
 
-  const form = document.querySelector('form');
-  const emailInput = form.querySelector('input[name="text"]');
-  const errorMessages = form.querySelector('.error-messages');
+const form = document.querySelector('form');
+const emailInput = form.querySelector('input[name="text"]');
+const errorMessages = form.querySelector('.error-messages');
   
-  form.addEventListener('submit', (event) => {
-    event.preventDefault();
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
     
-    const email = emailInput.value.trim();
-    errorMessages.innerHTML = '';
+  const email = emailInput.value.trim();
+  errorMessages.innerHTML = '';
     
-    if (email === '') {
-      displayErrorMessage('Please fill in the email field');
-      return;
-    }
-    
-    if (!validateEmail(email)) {
-      displayErrorMessage('Please enter a valid email address');
-      return;
-    }
-    
-    emailInput.value = '';
-    errorMessages.innerHTML = '';
-  });
-  
-  function displayErrorMessage(message) {
-    const errorMessage = document.createElement('div');
-    errorMessage.textContent = message;
-    errorMessage.classList.add('error-message');
-    errorMessages.appendChild(errorMessage);
+  if (email === '') {
+    displayErrorMessage('Please fill in the email field');
+    return;
   }
-  
-  function validateEmail(email) {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
+    
+  if (!validateEmail(email)) {
+    displayErrorMessage('Please enter a valid email address');
+    return;
   }
+    
+  emailInput.value = '';
+  errorMessages.innerHTML = '';
+});
+  
+function displayErrorMessage(message) {
+  const errorMessage = document.createElement('div');
+  errorMessage.textContent = message;
+  errorMessage.classList.add('error-message');
+  errorMessages.appendChild(errorMessage);
+}
+  
+function validateEmail(email) {
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailRegex.test(email);
+}

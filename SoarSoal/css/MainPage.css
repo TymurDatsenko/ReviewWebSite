@@ -111,7 +111,7 @@ input[name="point"] {
 .text-with-lines p {
     position: relative;
     display: inline-block;
-    padding: 0 20px;
+    padding: 0 56px;
     font-size: 24px;
 }
   
@@ -120,8 +120,8 @@ input[name="point"] {
     content: '';
     position: absolute;
     top: 50%;
-    width: calc(310%); 
-    height: 2px;
+    width: calc(200%); 
+    height: 1.5px;
     background-color: black;
 }
   
@@ -131,6 +131,70 @@ input[name="point"] {
 }
   
 .text-with-lines p::after {
+    left: 100%;
+    margin-left: 20px;
+}
+
+.text-with-lines1 {
+    position: relative;
+    text-align: center;
+}
+  
+.text-with-lines1 p {
+    position: relative;
+    display: inline-block;
+    padding: 0 80px;
+    font-size: 24px;
+}
+  
+.text-with-lines1 p::before,
+.text-with-lines1 p::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: calc(200%); 
+    height: 2px;
+    background-color: black;
+}
+  
+.text-with-lines1 p::before {
+    right: 100%;
+    margin-right: 20px;
+}
+  
+.text-with-lines1 p::after {
+    left: 100%;
+    margin-left: 20px;
+}
+
+.text-with-lines2 {
+    position: relative;
+    text-align: center;
+}
+  
+.text-with-lines2 p {
+    position: relative;
+    display: inline-block;
+    padding: 0 58px;
+    font-size: 24px;
+}
+  
+.text-with-lines2 p::before,
+.text-with-lines2 p::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: calc(200%); 
+    height: 2px;
+    background-color: black;
+}
+  
+.text-with-lines2 p::before {
+    right: 100%;
+    margin-right: 20px;
+}
+  
+.text-with-lines2 p::after {
     left: 100%;
     margin-left: 20px;
 }
@@ -151,8 +215,8 @@ input[name="point"] {
 
 .first-row {
     display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
+    justify-content: center;
+    align-items: center;
 }
   
 .first-row .cardBox {
@@ -205,7 +269,7 @@ input[name="point"] {
 .cardBox:hover .info-card2,
 .cardBox:hover .info-card3,
 .cardBox:hover .info-card4 {
-    filter: brightness(0.8); /* Увеличение темноты изображения */
+    filter: brightness(0.8); 
 }
   
 .info-card1 .h4,
@@ -284,7 +348,10 @@ input[name="point"] {
     border: none;
     background: none;
     cursor: pointer;
-    margin-top: 20px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
    
 .cta:before {
@@ -349,7 +416,7 @@ header {
     width: 100%;
     display: flex;
     overflow: hidden;
-    z-index: 9999;
+    z-index: 7777;
 }
 
 header::before {
@@ -364,12 +431,13 @@ header::before {
     z-index: -1;
 }
 
-#main-logo {
+.main-logo {
     margin-top: 17px;
     position: absolute;
     width: 50px;
     height: 50px;
     right: 30px;
+    cursor: pointer;
 }
 
 .menu-btn {
@@ -437,7 +505,7 @@ header::before {
 
 .scroll-target {
     position: relative;
-    top: -80px; 
+    top: -65px; 
     visibility: hidden;
 } 
 
@@ -571,13 +639,6 @@ nav ul li {
     align-items: center;
 }
 
-* {
-	margin-top: 0;
-	padding: 0;
-    font-family: Arial, sans-serif;
-	box-sizing: border-box;
-}
-
 .footer {
 	width: 100%;
 	padding: 100px 15%;
@@ -661,4 +722,9 @@ form button:active {
 	color: rgb(255, 0, 0);
   	font-size: 14px;
   	font-weight: bold;
-} 
+}  
+
+.video {
+    text-align: center;
+    margin-top: 1%;
+}

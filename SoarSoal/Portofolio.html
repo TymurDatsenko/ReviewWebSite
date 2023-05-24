@@ -4,14 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/AboutMe.css" />
+    <link rel="stylesheet" href="./css/Portofolio.css" />
+    <link rel="stylesheet" href="./css/Preloader.css"> 
     <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
     <title>SoalSoal</title>
   </head>
   <body>
+
+    <div id="page">
+      <div id="container">
+          <div id="ring"></div>
+          <div id="ring"></div>
+          <div id="ring"></div>
+          <div id="ring"></div>
+          <div id="h3">Loading...</div>
+      </div>
+    </div>
+
     <!-- Fixed Navbar -->
     <header class="header" id="header">
       <nav class="nav container">
+        <a href="MainPage.html" class="nav-back">&#8592; Back</a>
         <a href="#" class="nav-logo">My Portofolio</a>
         <div class="nav-menu" id="nav-menu">
           <ul class="nav-list grid">
@@ -56,8 +69,7 @@
             <div class="home-img">
               <img
                 id="my_picture_linkedin"
-                src="https://media-exp1.licdn.com/dms/image/C5603AQFhhWTC6UqqxA/profile-displayphoto-shrink_400_400/0/1657351639590?e=1669852800&v=beta&t=6q35kuhtUa7f67Xi1IYtVoqCDmJYtrmQCIlznrpkHDo"
-                alt="Tymur Datsenko Profile"
+                src="./img/KL1r9wZz-Cc.jpg"
               />
             </div>
 
@@ -81,7 +93,7 @@
         <span class="section-subtitle">Student</span>
 
         <div class="about-container container grid">
-          <img id="about-image" src="./img/KL1r9wZz-Cc.jpg">
+          <img id="about-image" src="./img/gYPFSHvJjv4.jpg">
           
           <div class="about-data">
             <p>
@@ -139,22 +151,7 @@
 
               <div>
                 <span class="education-dot"></span>
-                <!-- <span class="education-line"></span>
-              </div> -->
             </div>
-
-            <!-- <div class="education-data">
-              <div></div>
-              <div>
-                <span class="education-dot"></span>
-              </div>
-
-              <div>
-                <h3 class="education-title">College Student</h3>
-                <span class="education-subtitle">Teknologi Informasi (Ilmu Komputer) | Universitas Jember</span>
-                <div class="education-period">📅 2020 - Present</div>
-              </div>
-            </div> -->
           </div>
         </div>
       </section>
@@ -309,5 +306,6 @@
       </div>
     </footer>
     <script src="./js/AboutMe.js"></script>
+    <script src="./js/Preloader.js"></script>
   </body>
 </html>

@@ -9,12 +9,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title> SoarSoal </title>
   <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
-  <link rel="stylesheet" href="./css/MainPage.css" />
+  <link rel="stylesheet" href="./css/MainPage.css">
+  <link rel="stylesheet" href="./css/Preloader.css"> 
   <script src="https://cdn.jsdelivr.net/npm/three@0.131.2/build/three.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 </head>
 
 <body>
+  <div id="page">
+    <div id="container">
+        <div id="ring"></div>
+        <div id="ring"></div>
+        <div id="ring"></div>
+        <div id="ring"></div>
+        <div id="h3">Loading...</div>
+    </div>
+  </div>
+
   <header>
     <nav>
       <div class="burger-menu">
@@ -28,7 +39,7 @@
           <li><a class="menu-item" href="OurServices.html">Our Services</a></li>
           <li><a class="menu-item" href="Portofolio.html">About Me</a></li>
           <li><a class="menu-item" href="#">News</a></li>
-          <li><a class="menu-item" href="#contact">Contact Us </a></li>
+          <li><a class="menu-item" href="#contact">Contact Me</a></li>
         </ul>
       </div>
 
@@ -43,7 +54,7 @@
           <a class="sections" href="#adventures">Adventures</a>
         </li>
       </ul>
-      <img id="main-logo" src="./img/logo.png" />
+      <a class="main-logo" href="#"><img src="./img/logo.png"/></a>
     </nav>
   </header>
   <main>
@@ -107,7 +118,6 @@
             </div>
           </div>
         </div>
-
       </div>
       <button class="cta">
         <span><a href="OurServices.html">See more info</a></span>
@@ -117,16 +127,41 @@
         </svg>
       </button>
     </div>
+
+    <div class="text-with-lines1">
+      <p id="culture" class="scroll-target">Discoveries</p>
+      <br>
+      <p>Culture</p>
+    </div>
+
+    <div class="text-with-lines2">
+      <p id="adventures" class="scroll-target">Discoveries</p>
+      <br>
+      <p>Adventures</p>
+    </div>
+
+    <div class="container_video">
+      <div class="video">
+        <iframe width="662" height="417" class="video" src="https://www.youtube.com/embed/eDqm77tbs2U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <button class="cta">
+      <span><a href="OurServices.html">See more info</a></span>
+      <svg viewBox="0 0 13 10" height="10px" width="15px">
+        <path d="M1,5 L11,5"></path>
+        <polyline points="8 1 12 5 8 9"></polyline>
+      </svg>
+    </button>
+
   </main>
   <footer>
     <div class="footer">
       <div class="col-1">
         <h3>Useful Links:</h3>
         <a href="OurServices.html">Our Services</a>
-        <a href="Portofolio.html">About Us</a>
+        <a href="Portofolio.html">About Me</a>
         <a href="">News</a>
-        <a href="">Project History</a>
-        <a href="">Our team</a>
       </div>
       <div class="col-2">
         <h3>Notifications:</h3>
@@ -138,7 +173,7 @@
       </div>
       <div class="col-3">
         <h3>
-          <div id="contact">Contact Us:</div>
+          <div id="contact">Contact Me:</div>
         </h3>
         <ul>
           <li>Phone: (xxx)xxx-xx-xx</li>
@@ -154,5 +189,6 @@
     </div>
   </footer>
   <script src="./js/MainPage.js"></script>
+  <script src="./js/Preloader.js"></script>
 </body>
 </html>

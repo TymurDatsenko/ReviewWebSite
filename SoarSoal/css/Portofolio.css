@@ -103,7 +103,7 @@ img {
 }
 
 #my_picture_linkedin {
-  border-radius: 50%;
+  border-radius: 20%;
 }
 
 .section {
@@ -153,7 +153,7 @@ img {
 /* Nav */
 .nav {
   display: flex;
-  max-width: 968px;
+  max-width: 1200px;
   height: var(--app-header-height);
   justify-content: space-between;
   align-items: center;
@@ -166,6 +166,17 @@ img {
 }
 
 .nav-logo:hover {
+  color: var(--app-color);
+}
+
+.nav-back {
+  color: var(--app-title-color);
+  font-weight: var(--app-medium-font-weight);
+  font-size: var(--app-h2-font-size);
+  margin-right: auto;
+}
+
+.nav-back:hover {
   color: var(--app-color);
 }
 
@@ -187,6 +198,7 @@ img {
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
+
 .nav-link {
   display: flex;
   flex-direction: column;
