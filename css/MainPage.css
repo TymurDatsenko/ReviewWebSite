@@ -33,9 +33,7 @@ main {
     height: 500px;
     overflow: hidden;
     z-index: 7;
-    margin-left: -1px;
     align-self: flex-start;
-
 }
 
 .middle {
@@ -153,7 +151,7 @@ input[name="point"] {
     position: absolute;
     top: 50%;
     width: calc(200%); 
-    height: 2px;
+    height: 1.5px;
     background-color: black;
 }
   
@@ -170,6 +168,7 @@ input[name="point"] {
 .text-with-lines2 {
     position: relative;
     text-align: center;
+    margin-top: -1.5%;
 }
   
 .text-with-lines2 p {
@@ -185,7 +184,7 @@ input[name="point"] {
     position: absolute;
     top: 50%;
     width: calc(200%); 
-    height: 2px;
+    height: 1.5px;
     background-color: black;
 }
   
@@ -220,7 +219,7 @@ input[name="point"] {
 }
   
 .first-row .cardBox {
-    margin: 0 10px;
+    margin: 10px 10px;
 }
 
 .cardBox {
@@ -624,7 +623,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: -11.5px;
+    margin-left: -12.5px;
 }
 
 nav ul {
@@ -746,86 +745,56 @@ img {
     color: #a64ed8;
 }
 
-.card {
-    overflow: visible;
-    position: relative;
+.card-img1 {
     width: 190px;
-    height: 254px;
-    background: #fff;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
-  }
+    height: 274px;
+    background: white;
+    padding: .4em;
+    border-radius: 6px;
+}
   
-  .card:before,
-  .card:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
+.card-image {
+    background-image: url("https://st4.depositphotos.com/14883968/21323/i/600/depositphotos_213239274-stock-photo-landscape-beautiful-piva-lake-mountains.jpg");
+    background-color: rgb(236, 236, 236);
     width: 100%;
-    height: 100%;
-    border-radius: 4px;
-    background: #fff;
-    transition: 0.5s;
-    z-index: -99;
-  }
+    height: 60%;
+    border-radius: 6px 6px 0 0;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.first-row .card-img1 {
+    margin: 10px 10px;
+}
   
-  .details {
-    position: absolute;
-    left: -10px;
-    right: 0;
-    bottom: 5px;
-    height: 60px;
-    text-align: center;
+.card-image:hover {
+    transform: scale(0.98);
+}
+  
+.category-img1 {
     text-transform: uppercase;
-  }
-  
-  /*Image*/
-  .imgbox {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    bottom: 10px;
-    right: 10px;
-    background: #222;
-    transition: 0.5s;
-    z-index: 1;
-  }
-  
-  .img {
-    background: #4158D0;
-    background-image: linear-gradient(45deg, #4158D0, #C850C0);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  
-  /*Text*/
-  .title {
+    font-size: 0.7em;
     font-weight: 600;
-    font-size: 20px;
-    color: #777;
-  }
+    color: rgb(63, 121, 230);
+    padding: 10px 7px 0;
+}
   
-  .caption {
-    font-weight: 500;
-    font-size: 16px;
-    color: #4158D0;
-    display: block;
-    margin-top: 5px;
-  }
+.category-img1:hover, .category-img2:hover {
+    cursor: pointer;
+}
   
-  /*Hover*/
-  .card:hover .imgbox {
-    bottom: 80px;
-  }
+.heading {
+    font-weight: 600;
+    color: rgb(88, 87, 87);
+    padding: 7px;
+}
+
+.second-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
   
-  .card:hover:before {
-    transform: rotate(20deg);
-  }
-  
-  .card:hover:after {
-    transform: rotate(10deg);
-    box-shadow: 0 2px 20px rgba(0, 0, 0, .2);
-  }
+.second-row .card-img1 {
+    margin: 20px;
+}
