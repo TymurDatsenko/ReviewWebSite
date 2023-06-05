@@ -2,16 +2,15 @@
 <html lang="en">
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" card-content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" card-content="IE=edge" />
+  <meta name="viewport" card-content="width=device-width, initial-scale=1.0" />
   <title> SoarSoal </title>
   <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
   <link rel="stylesheet" href="./css/MainPage.css">
   <link rel="stylesheet" href="./css/Preloader.css"> 
-  <script src="https://cdn.jsdelivr.net/npm/three@0.131.2/build/three.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 </head>
 
@@ -28,10 +27,11 @@
 
   <header>
     <nav>
-      <div class="burger-menu">
-        <input id="menu-toggle" type="checkbox" />
-        <label class="menu-btn" for="menu-toggle">
-          <span></span>
+      <input type="checkbox" id="checkbox">
+        <label for="checkbox" class="toggle">
+          <div class="bars" id="bar1"></div>
+          <div class="bars" id="bar2"></div>
+          <div class="bars" id="bar3"></div>
         </label>
       
         <ul class="menubox">
@@ -68,7 +68,7 @@
         <div class="slide" id="slide-2"></div>
         <div class="slide" id="slide-3"></div>
       </div>
-      <div class="navigation">
+      <div class="navigation-points">
         <label for="point-1" class="bar"></label>
         <label for="point-2" class="bar"></label>
         <label for="point-3" class="bar"></label>
@@ -76,16 +76,16 @@
     </div>
     <div class="discoveries-container">
       <div class="discoveries-helper"></div>
-      <div class="text-with-lines">
-        <p id="discoveries" class="scroll-target">Discoveries</p>
+      <div class="text-with-lines-Discoveries">
+        <p id="discoveries" class="scroll-target">Scroll-Target</p>
         <br>
         <p>Discoveries</p>
       </div>
     <div class="photo-container">
-      <div class="first-row">
+      <div class="discoveries-row">
         <div class="cardBox">
-          <div class="info-card1">
-            <div class="content">
+          <div class="info-card-piva">
+            <div class="card-content">
               <div class="h3">Piva (river)</div>
               <p>This is Pradeep Saran, your tech mate!!! I love you all. Lets make this world a better place for all of us. Keep prospering...Keep learning!!!</p>
             </div>
@@ -94,7 +94,7 @@
 
         <div class="cardBox">
           <div class="info-card2">
-            <div class="content">
+            <div class="card-content">
               <div class="h3">How's it goin Fam ?</div>
               <p>This is Pradeep Saran, your tech mate!!! I love you all. Lets make this world a better place for all of us. Keep prospering...Keep learning!!!</p>
             </div>
@@ -103,7 +103,7 @@
 
         <div class="cardBox">
           <div class="info-card3">
-            <div class="content">
+            <div class="card-content">
               <div class="h3">How's it goin Fam ?</div>
               <p>This is Pradeep Saran, your tech mate!!! I love you all. Lets make this world a better place for all of us. Keep prospering...Keep learning!!!</p>
             </div>
@@ -112,7 +112,7 @@
       
         <div class="cardBox">
           <div class="info-card4">
-            <div class="content">
+            <div class="card-content">
               <div class="h3">How's it goin Fam ?</div>
               <p>This is Pradeep Saran, your tech mate!!! I love you all. Lets make this world a better place for all of us. Keep prospering...Keep learning!!!</p>
             </div>
@@ -121,13 +121,13 @@
       </div>
     </div>
 
-    <div class="text-with-lines1">
-      <p id="culture" class="scroll-target">Discoveries</p>
+    <div class="text-with-lines-Discoveries-Culture">
+      <p id="culture" class="scroll-target">Scroll-Target</p>
       <br>
       <p>Culture</p>
     </div>
 
-  <div class="second-row">
+  <div class="culture-row">
     <div class="card-img1">
       <div class="card-image"></div>
       <div class="category-img1"> Illustration </div>
@@ -156,10 +156,9 @@
       </div>
     </div>
   </div>
-    
 
-    <div class="text-with-lines2">
-      <p id="adventures" class="scroll-target">Discoveries</p>
+    <div class="text-with-lines-Discoveries-Adventures">
+      <p id="adventures" class="scroll-target">Scroll-Target</p>
       <br>
       <p>Adventures</p>
     </div>
@@ -177,40 +176,53 @@
         <polyline points="8 1 12 5 8 9"></polyline>
       </svg>
     </button>
-
   </main>
-  <footer>
-    <div class="footer">
-      <div class="col-1">
-        <h3>Useful Links:</h3>
-        <a href="">News</a>
-        <a href="OurServices.html">Our Services</a>
-        <a href="Portofolio.html">About Me</a>
-        <a href="#contact">Contact Me</a>
+  
+  <footer class="footer-distributed">
+    <div class="footer-left">
+      <h3>Soar<span>Soal</span></h3>
+      <p class="footer-links">
+          <a href="#">News</a>
+          |
+          <a href="Portofolio.html">About Me</a>
+          |
+          <a href="OurServices.html">Our Services</a>
+          |
+          <a href="#contact">Contact</a>
+      </p>
+
+      <p id="contact" class="footer-company-name">Copyright © 2023 <strong>SoarSoal</strong> All rights reserved</p>
+    </div>
+
+    <div class="footer-center">
+
+      <p class="footer-company-about">
+        <span>Contact Me</span>
+      </p>
+
+      <div>
+        <i class="fa fa-phone"></i>
+        <p>+(xxx)xxx-xx-xx</p>
       </div>
-      <div class="col-2">
-        <h3>Notifications:</h3>
-        <form> 
-          <input autocomplete="off" name="text" class="input" placeholder="Enter your email adress" />  
-          <div class="error-messages"></div>
-          <button type="submit">Subscribe</button>
-        </form>
+      <div>
+        <i class="fa fa-envelope"></i>
+        <p><a href="mailto:tdacenko746@gmail.com">tdacenko746@gmail.com</a></p>
       </div>
-      <div class="col-3">
-        <h3>
-          <div id="contact">Contact Me:</div>
-        </h3>
-        <ul>
-          <li>Phone: (xxx)xxx-xx-xx</li>
-          <li>Email: tdacenko746@gmail.com</li>
-        </ul>
-        <div class="SocialMedia">
-          <a target="_blank" href="https://www.instagram.com/_tymur.d/" class="fa fa-instagram"></a>
-          <a target="_blank" href="https://www.facebook.com/profile.php?id=100016057680551" class="fa fa-facebook"></a>
-          <a target="_blank" href="#" class="fa fa-snapchat-ghost"></a>
-          <a target="_blank" href="https://github.com/TymurDatsenko" class="fa fa-github"></a>
+    </div>
+
+    <div class="footer-right">
+      <p class="footer-company-about">
+        <span>About the company</span>
+        <strong>SoarSoal</strong> a Web Page where you can find information, 
+        photos about interesting, 
+        exciting places, as well as reviews about them.
+      </p>
+        <div class="footer-icons">
+          <a target="_blank" href="https://www.facebook.com/profile.php?id=100016057680551"><i class="fa fa-facebook"></i></a>
+          <a target="_blank" href="https://www.instagram.com/_tymur.d/"><i class="fa fa-instagram"></i></a>
+          <a target="_blank" href="https://github.com/TymurDatsenko"><i class="fa fa-github"></i></a>
+          <a target="_blank" href="#"><i class="fa fa-snapchat"></i></a>
         </div>
-      </div>
     </div>
   </footer>
   <script src="./js/MainPage.js"></script>

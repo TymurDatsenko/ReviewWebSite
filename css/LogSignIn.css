@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
 
-h6 {
-  color: #000000;
-  text-align: center;
-}
-
 body{
 	font-family: 'Poppins', sans-serif;
 	font-weight: 300;
@@ -12,6 +7,46 @@ body{
 	color: #dcc67d;
 	background-color: #daecfd;
 }
+
+/* Left and Right Cards */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.card2 {
+  position: relative;
+  animation: levitate 4.0s ease-in-out infinite;
+  box-sizing: border-box;
+  width: 190px;
+  height: 254px;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+  border-radius: 17px;
+  text-align: center;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  font-weight: bolder;
+}
+
+.logo-name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  font-family: 'Yellowtail', cursive;
+}
+
+/* Forgot your password Button */
 
 a:hover {
 	text-decoration: none;
@@ -30,8 +65,17 @@ p {
   font-size: 14px;
 }
 
+/* Log In*/
+
 h4 {
   font-weight: 600;
+}
+
+/* Log In Sing Up */
+
+h6 {
+  color: #000000;
+  text-align: center;
 }
 
 h6 span{
@@ -39,15 +83,21 @@ h6 span{
   font-weight: 700;
 }
 
+/* Distance between cards */
+
 .section{
   position: relative;
   width: 100%;
   display: block;
 }
 
+/* Align cards on the Y axis  */
+
 .full-height{
   min-height: 100vh;
 }
+
+/* Log In or Sign Up selection button */
 
 [type="checkbox"]:checked,
 [type="checkbox"]:not(:checked){
@@ -91,6 +141,8 @@ display: none;
 .checkbox:checked + label:before {
   transform: translateX(44px) rotate(-270deg);
 }
+
+/* Card in the middle */
 
 .card-3d-wrap {
   position: relative;
@@ -145,6 +197,8 @@ display: none;
   z-index: 20;
   display: block;
 }
+
+/* Icons, labels */
 
 .form-group{ 
   position: relative;
@@ -215,42 +269,6 @@ display: none;
   box-shadow: 0 8px 24px 0 rgba(16,39,112,.2);
 }
 
-.card1 {
-  position: relative;
-  animation: levitate 4.0s ease-in-out infinite;
-  box-sizing: border-box;
-  width: 190px;
-  height: 254px;
-  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
-  backdrop-filter: blur(6px);
-  border-radius: 17px;
-  text-align: center;
-  transition: all 0.5s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  user-select: none;
-  font-weight: bolder;
-}
-
-.card2 {
-  position: relative;
-  animation: levitate 4.0s ease-in-out infinite;
-  box-sizing: border-box;
-  width: 190px;
-  height: 254px;
-  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
-  backdrop-filter: blur(6px);
-  border-radius: 17px;
-  text-align: center;
-  transition: all 0.5s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  user-select: none;
-  font-weight: bolder;
-}
-
 @keyframes levitate {
   0%, 100% {
     transform: translateY(0);
@@ -264,29 +282,11 @@ display: none;
 h3 {
   text-align: center;
 }
- 
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  text-align: center;
-  color: white;
-}
 
 .column {
   flex: 1;
   text-align: center;
   top: 50%;
-}
-
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 25px;
-  font-family: 'Yellowtail', cursive;
 }
 
 .signup-error-message {

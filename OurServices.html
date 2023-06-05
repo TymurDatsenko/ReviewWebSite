@@ -4,15 +4,14 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.4/tailwind.min.css'>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title> SoarSoal </title>
   <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
-  <link rel="stylesheet" href="./css/MainPage.css">
+  <link rel="stylesheet" href="./css/OurServices.css">
   <link rel="stylesheet" href="./css/Preloader.css"> 
-  <script src="https://cdn.jsdelivr.net/npm/three@0.131.2/build/three.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 </head>
 
 <body>
@@ -28,19 +27,21 @@
 
   <header>
     <nav>
-      <div class="burger-menu">
-        <input id="menu-toggle" type="checkbox" />
-        <label class="menu-btn" for="menu-toggle">
-          <span></span>
+      <input type="checkbox" id="checkbox">
+        <label for="checkbox" class="toggle">
+          <div class="bars" id="bar1"></div>
+          <div class="bars" id="bar2"></div>
+          <div class="bars" id="bar3"></div>
         </label>
       
         <ul class="menubox">
           <div class="title"><h1>NAVIGATION</h1></div>
+          <li><a class="menu-item" href="MainPage.html">Home</a></li>
           <li><a class="menu-item" href="#">News</a></li>
           <li><a class="menu-item" href="Portofolio.html">About Me</a></li>
-          <li><a class="menu-item" href="#contact">Contact Me</a></li>
+         <li><a class="menu-item" href="#contact">Contact Me</a></li> <!--если получится сделать Прелоадер -->
         </ul>
-      </div>
+
 
       <ul>
         <li>
@@ -49,9 +50,18 @@
       </ul>
       <a class="main-logo" href="MainPage.html"><img src="./img/logo.png"/></a>
     </nav>
-  </header>
+  </header> 
 
+  <div>
+    <input type="text" class="search-input" placeholder="Type to search"/>
+    <button class="search-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 cursor-pointer" viewBox="0 0 20 20" fill="currentColor">
+        <path d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" />
+      </svg>
+    </button>
+  </div>
 
-
+  <script src="./js/OurServices.js"></script>
+  <script src="./js/Preloader.js"></script>
 </body>
 </html>

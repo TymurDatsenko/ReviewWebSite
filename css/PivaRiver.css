@@ -317,6 +317,7 @@ header::before {
   align-items: center;
   width: 150px;
   height: 77px;
+  font-family: 'Yellowtail', cursive;
 }
 
 .sections:hover {
