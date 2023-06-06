@@ -1,5 +1,5 @@
 function validateForm(event) {
-    event.preventDefault();
+  event.preventDefault();
 
   var fullname = document.getElementById('fullname').value;
   var email = document.getElementById('email').value;

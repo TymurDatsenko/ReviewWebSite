@@ -67,7 +67,88 @@ nav ul li {
     align-items: center;
 }
 
-/* Navigation, Menubox */
+/* Navigation, Burger Menu */
+  
+.toggle {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition-duration: .5s;
+    position: absolute;
+    left: 30px;
+}
+  
+.bars {
+    width: 100%;
+    height: 4px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+}
+
+#checkbox {
+    opacity: 0;
+    display: none;
+}
+
+#checkbox:checked~#checkbox>span {
+    transform: rotate(45deg);
+}
+
+#checkbox:checked~#checkbox>span::before {
+    top: 0;
+    transform: rotate(0);
+}
+
+#checkbox:checked~#checkbox>span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+#checkbox:checked~.menubox {
+    visibility: visible;
+    left: 0;
+}
+  
+#bar2 {
+    transition-duration: .8s;
+}
+  
+#bar1,#bar3 {
+    width: 70%;
+}
+  
+#checkbox:checked + .toggle .bars {
+    position: absolute;
+    transition-duration: .5s;
+}
+  
+#checkbox:checked + .toggle #bar2 {
+    transform: scaleX(0);
+    transition-duration: .5s;
+}
+  
+#checkbox:checked + .toggle #bar1 {
+    width: 100%;
+    transform: rotate(45deg);
+    transition-duration: .5s;
+}
+  
+#checkbox:checked + .toggle #bar3 {
+    width: 100%;
+    transform: rotate(-45deg);
+    transition-duration: .5s;
+}
+  
+#checkbox:checked + .toggle {
+    transition-duration: .5s;
+    transform: rotate(180deg);
+}
 
 .title h1{
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -89,29 +170,6 @@ nav ul li {
 
 .menubox:hover{
 	transition: 0.7s ease;
-}
-
-#checkbox {
-    opacity: 0;
-}
-
-#checkbox:checked~#checkbox>span {
-    transform: rotate(45deg);
-}
-
-#checkbox:checked~#checkbox>span::before {
-    top: 0;
-    transform: rotate(0);
-}
-
-#checkbox:checked~#checkbox>span::after {
-    top: 0;
-    transform: rotate(90deg);
-}
-
-#checkbox:checked~.menubox {
-    visibility: visible;
-    left: 0;
 }
 
 .menu-item {
@@ -195,6 +253,8 @@ img {
     width: 100%;
 }
 
+/* Search Icon, Button */
+
 .search-icon {
     top: 15%;
     color: inherit;
@@ -217,64 +277,3 @@ img {
     transition: border-color 0.3s ease;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
-
-#checkbox {
-    display: none;
-  }
-  
-  .toggle {
-    position: relative;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    transition-duration: .5s;
-    position: absolute;
-    left: 30px;
-  }
-  
-  .bars {
-    width: 100%;
-    height: 4px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 4px;
-  }
-  
-  #bar2 {
-    transition-duration: .8s;
-  }
-  
-  #bar1,#bar3 {
-    width: 70%;
-  }
-  
-  #checkbox:checked + .toggle .bars {
-    position: absolute;
-    transition-duration: .5s;
-  }
-  
-  #checkbox:checked + .toggle #bar2 {
-    transform: scaleX(0);
-    transition-duration: .5s;
-  }
-  
-  #checkbox:checked + .toggle #bar1 {
-    width: 100%;
-    transform: rotate(45deg);
-    transition-duration: .5s;
-  }
-  
-  #checkbox:checked + .toggle #bar3 {
-    width: 100%;
-    transform: rotate(-45deg);
-    transition-duration: .5s;
-  }
-  
-  #checkbox:checked + .toggle {
-    transition-duration: .5s;
-    transform: rotate(180deg);
-  }

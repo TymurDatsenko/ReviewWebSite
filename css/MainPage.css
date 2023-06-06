@@ -68,11 +68,9 @@ nav ul li {
     align-items: center;
 }
 
-#checkbox {
-    display: none;
-  }
+/* Burger Menu */
   
-  .toggle {
+.toggle {
     position: relative;
     width: 40px;
     height: 40px;
@@ -85,51 +83,73 @@ nav ul li {
     transition-duration: .5s;
     position: absolute;
     left: 30px;
-  }
+}
   
-  .bars {
+.bars {
     width: 100%;
     height: 4px;
     background-color: rgb(255, 255, 255);
     border-radius: 4px;
-  }
+}
+
+#checkbox {
+    display: none;
+    opacity: 0;
+}
   
-  #bar2 {
+#bar2 {
     transition-duration: .8s;
-  }
+}
   
-  #bar1,#bar3 {
+#bar1,#bar3 {
     width: 70%;
-  }
+}
   
-  #checkbox:checked + .toggle .bars {
+#checkbox:checked + .toggle .bars {
     position: absolute;
     transition-duration: .5s;
-  }
+}
   
-  #checkbox:checked + .toggle #bar2 {
+#checkbox:checked + .toggle #bar2 {
     transform: scaleX(0);
     transition-duration: .5s;
-  }
+}
   
-  #checkbox:checked + .toggle #bar1 {
+#checkbox:checked + .toggle #bar1 {
     width: 100%;
     transform: rotate(45deg);
     transition-duration: .5s;
-  }
+}
   
-  #checkbox:checked + .toggle #bar3 {
+#checkbox:checked + .toggle #bar3 {
     width: 100%;
     transform: rotate(-45deg);
     transition-duration: .5s;
-  }
+}
   
-  #checkbox:checked + .toggle {
+#checkbox:checked + .toggle {
     transition-duration: .5s;
     transform: rotate(180deg);
-  }
+}
 
-/* Navigation, Menubox */
+#checkbox:checked~#checkbox>span {
+    transform: rotate(45deg);
+}
+
+#checkbox:checked~#checkbox>span::before {
+    top: 0;
+    transform: rotate(0);
+}
+
+#checkbox:checked~#checkbox>span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+#checkbox:checked~.menubox {
+    visibility: visible;
+    left: 0;
+}
 
 .title h1{
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -151,29 +171,6 @@ nav ul li {
 
 .menubox:hover{
 	transition: 0.7s ease;
-}
-
-#checkbox {
-    opacity: 0;
-}
-
-#checkbox:checked~#checkbox>span {
-    transform: rotate(45deg);
-}
-
-#checkbox:checked~#checkbox>span::before {
-    top: 0;
-    transform: rotate(0);
-}
-
-#checkbox:checked~#checkbox>span::after {
-    top: 0;
-    transform: rotate(90deg);
-}
-
-#checkbox:checked~.menubox {
-    visibility: visible;
-    left: 0;
 }
 
 .menu-item {
@@ -407,134 +404,6 @@ input[name="point"] {
     margin: 10px 10px;
 }
 
-/* Culture */
-
-.text-with-lines-Discoveries-Culture {
-    position: relative;
-    text-align: center;
-}
-  
-.text-with-lines-Discoveries-Culture p {
-    position: relative;
-    display: inline-block;
-    padding: 0 80px;
-    font-size: 24px;
-}
-  
-.text-with-lines-Discoveries-Culture p::before,
-.text-with-lines-Discoveries-Culture p::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    width: calc(200%); 
-    height: 1.5px;
-    background-color: black;
-}
-  
-.text-with-lines-Discoveries-Culture p::before {
-    right: 100%;
-    margin-right: 20px;
-}
-  
-.text-with-lines-Discoveries-Culture p::after {
-    left: 100%;
-    margin-left: 20px;
-}
-
-.culture-row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-  
-.culture-row .card-img1 {
-    margin: 20px;
-}
-
-/* Culture Cards */
-
-.card-img1 {
-    width: 190px;
-    height: 274px;
-    background: white;
-    padding: .4em;
-    border-radius: 6px;
-}
-  
-.card-image {
-    background-image: url("https://st4.depositphotos.com/14883968/21323/i/600/depositphotos_213239274-stock-photo-landscape-beautiful-piva-lake-mountains.jpg");
-    background-color: rgb(236, 236, 236);
-    width: 100%;
-    height: 60%;
-    border-radius: 6px 6px 0 0;
-    background-size: cover;
-    cursor: pointer;
-}
-  
-.card-image:hover {
-    transform: scale(0.98);
-}
-  
-.category-img1 {
-    text-transform: uppercase;
-    font-size: 0.7em;
-    font-weight: 600;
-    color: rgb(63, 121, 230);
-    padding: 10px 7px 0;
-}
-  
-.category-img1:hover, .category-img2:hover {
-    cursor: pointer;
-}
-  
-.heading {
-    font-weight: 600;
-    color: rgb(88, 87, 87);
-    padding: 7px;
-}
-
-/* Adventures */
-
-.text-with-lines-Discoveries-Adventures {
-    position: relative;
-    text-align: center;
-    margin-top: -1.5%;
-}
-  
-.text-with-lines-Discoveries-Adventures p {
-    position: relative;
-    display: inline-block;
-    padding: 0 58px;
-    font-size: 24px;
-}
-  
-.text-with-lines-Discoveries-Adventures p::before,
-.text-with-lines-Discoveries-Adventures p::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    width: calc(200%); 
-    height: 1.5px;
-    background-color: black;
-}
-  
-.text-with-lines-Discoveries-Adventures p::before {
-    right: 100%;
-    margin-right: 20px;
-}
-  
-.text-with-lines-Discoveries-Adventures p::after {
-    left: 100%;
-    margin-left: 20px;
-}
-
-/* YouTube video */
-
-.video {
-    text-align: center;
-    margin-top: 1%;
-}
-
 /* Discoveries Cards */
 
 .scroll-target {
@@ -608,7 +477,7 @@ input[name="point"] {
     font-weight: 800;
     pointer-events: none;
     opacity: 1;
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Добавлено тень */
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
   
 .info-card-piva .card-content .h3,
@@ -653,6 +522,134 @@ input[name="point"] {
 .info-card3:hover .h4,
 .info-card4:hover .h4 {
     opacity: 0;
+}
+
+/* Culture */
+
+.text-with-lines-Culture {
+    position: relative;
+    text-align: center;
+}
+  
+.text-with-lines-Culture p {
+    position: relative;
+    display: inline-block;
+    padding: 0 80px;
+    font-size: 24px;
+}
+  
+.text-with-lines-Culture p::before,
+.text-with-lines-Culture p::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: calc(200%); 
+    height: 1.5px;
+    background-color: black;
+}
+  
+.text-with-lines-Culture p::before {
+    right: 100%;
+    margin-right: 20px;
+}
+  
+.text-with-lines-Culture p::after {
+    left: 100%;
+    margin-left: 20px;
+}
+
+.culture-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.culture-row .card-img1 {
+    margin: 20px;
+}
+
+/* Culture Cards */
+
+.card-img1 {
+    width: 190px;
+    height: 274px;
+    background: white;
+    padding: .4em;
+    border-radius: 6px;
+}
+  
+.card-image {
+    background-image: url("https://st4.depositphotos.com/14883968/21323/i/600/depositphotos_213239274-stock-photo-landscape-beautiful-piva-lake-mountains.jpg");
+    background-color: rgb(236, 236, 236);
+    width: 100%;
+    height: 60%;
+    border-radius: 6px 6px 0 0;
+    background-size: cover;
+    cursor: pointer;
+}
+  
+.card-image:hover {
+    transform: scale(0.98);
+}
+  
+.category-img1 {
+    text-transform: uppercase;
+    font-size: 0.7em;
+    font-weight: 600;
+    color: rgb(63, 121, 230);
+    padding: 10px 7px 0;
+}
+  
+.category-img1:hover, .category-img2:hover {
+    cursor: pointer;
+}
+  
+.heading {
+    font-weight: 600;
+    color: rgb(88, 87, 87);
+    padding: 7px;
+}
+
+/* Adventures */
+
+.text-with-lines-Adventures {
+    position: relative;
+    text-align: center;
+    margin-top: -1.5%;
+}
+  
+.text-with-lines-Adventures p {
+    position: relative;
+    display: inline-block;
+    padding: 0 58px;
+    font-size: 24px;
+}
+  
+.text-with-lines-Adventures p::before,
+.text-with-lines-Adventures p::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: calc(200%); 
+    height: 1.5px;
+    background-color: black;
+}
+  
+.text-with-lines-Adventures p::before {
+    right: 100%;
+    margin-right: 20px;
+}
+  
+.text-with-lines-Adventures p::after {
+    left: 100%;
+    margin-left: 20px;
+}
+
+/* YouTube video */
+
+.video {
+    text-align: center;
+    margin-top: 1%;
 }
 
 /* See More Info Button */
@@ -901,3 +898,36 @@ footer {
   	font-size: 14px;
   	font-weight: bold;
 }  
+
+.my-project-icon {
+    display: block;
+    font-size: 1.5rem;
+    color: #0055ff;
+    margin-bottom: 1rem;
+    text-decoration: none;
+}
+  
+.my-project-button {
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 100px;
+}
+  
+.my-project-button:hover .button-icon {
+    transform: translateX(0.25rem);
+}
+  
+.my-project-description {
+    margin-bottom: 1rem;
+}
+
+.button-link {
+    padding: 0;
+    background-color: transparent;
+    color: #1f69ff;
+}
+
+.button-link:hover {
+    background-color: transparent;
+    color: #285fcd;
+}
