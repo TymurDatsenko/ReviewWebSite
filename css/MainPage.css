@@ -446,7 +446,7 @@ input[name="point"] {
 }
   
 .info-card2 {
-    background-image: url("https://st2.depositphotos.com/1591133/8812/i/600/depositphotos_88120646-stock-photo-idyllic-summer-landscape-with-clear.jpg");
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Machu_Picchu%2C_Peru.jpg/1200px-Machu_Picchu%2C_Peru.jpg");
 }
   
 .info-card3 {
@@ -630,7 +630,7 @@ input[name="point"] {
     position: absolute;
     top: 50%;
     width: calc(200%); 
-    height: 1.5px;
+    height: 0.5px;
     background-color: black;
 }
   
