@@ -380,7 +380,7 @@ input[name="point"] {
     position: absolute;
     top: 50%;
     width: calc(200%); 
-    height: 1.5px;
+    height: 1px;
     background-color: black;
 }
   
@@ -435,7 +435,6 @@ input[name="point"] {
     flex-direction: column;
     color: #ffffff;
     padding: 20px;
-    cursor: pointer;
     transition: filter 0.3s ease-in-out;
     background-position: center;
     background-size: cover;
@@ -544,7 +543,7 @@ input[name="point"] {
     position: absolute;
     top: 50%;
     width: calc(200%); 
-    height: 1.5px;
+    height: 1px;
     background-color: black;
 }
   
@@ -718,7 +717,6 @@ input[name="point"] {
 /* Footer */
 
 footer {
-    position: fixed;
     bottom: 0;
 }
 

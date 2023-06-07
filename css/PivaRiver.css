@@ -184,6 +184,10 @@ nav ul li {
   color: #111827; 
 }
 
+.picture-piva {
+  cursor: pointer;
+}
+
 @media (prefers-color-scheme: dark) {
   .header-name {
     color: #D1D5DB; 
