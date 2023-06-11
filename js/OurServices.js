@@ -1,5 +1,5 @@
 function filterBlocks() {
-    const searchInput = document.querySelector('.search-input');
+    const searchInput = document.querySelector('.input');
     const filter = searchInput.value.toLowerCase();
     const containers = document.querySelectorAll('.container');
 

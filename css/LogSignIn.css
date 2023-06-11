@@ -310,3 +310,20 @@ h3 {
 .input-icon uil uil-lock-alt {
   color: #ffffff; 
 }
+
+/* Footer */
+
+.copyright {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: grey;
+  color: #fff;
+  text-align: center;
+}
+
+.copyright p {
+  margin-top: 1%;
+}

@@ -162,7 +162,7 @@ nav ul li {
     flex-direction: column;
     top: 80px;
     left: -346px;
-    padding: 25vh 50px;
+    padding: 25vh 3%;
 	background: rgba(20, 20, 20, 0.5);
 	height: 100vh;
 	position: fixed;

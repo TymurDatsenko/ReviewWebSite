@@ -4,7 +4,6 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.4/tailwind.min.css'>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -52,14 +51,18 @@
   </header> 
   
   <main>
-    <div>
-      <input type="text" class="search-input" placeholder="Type to search" oninput="filterBlocks()"/>
-      <button class="search-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 cursor-pointer" viewBox="0 0 20 20" fill="currentColor">
-          <path d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" />
-        </svg>
-      </button>
+
+    <div class="SearchContainer">
+      <input type="text" name="text" class="input" id="input" placeholder="Type to search" oninput="filterBlocks()">
+      
+      <label for="input" class="labelforsearch">
+        <svg viewBox="0 0 512 512" class="searchIcon">
+        <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 
+        32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 
+        416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"></path></svg>
+      </label>
     </div>
+
 
     <div class="first-row">
       <div class="container" data-filter="Piva River">
@@ -218,6 +221,7 @@
           </div>
         </a>
       </div>
+    </div>
   </main>
 
   <script src="./js/OurServices.js"></script>
