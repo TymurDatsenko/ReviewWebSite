@@ -49,11 +49,9 @@ header::before {
 }
 
 nav {
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: -12.5px;
 }
 
 nav ul {
@@ -270,7 +268,6 @@ main {
     width: 100%;
     height: 500px;
     overflow: hidden;
-    z-index: 7;
     align-self: flex-start;
 }
 
@@ -347,51 +344,22 @@ input[name="point"] {
 
 /* Discoveries*/
 
+.section-subtitle {
+    display: block;
+    font-size: 0.813rem;
+    margin-bottom: 0.5rem;
+    color: rgb(108, 108, 108);
+    text-align: center;
+}
+
+h2 {
+    margin-top: 10px;
+    text-align: center;
+}
+
 .discoveries-container {
     margin-top: 550px;
     justify-content: center;
-}
-
-.discoveries-helper{
-    background-color: #daecfd;
-    position: relative;
-    width: 15px;
-    z-index: 3;
-    top: 40px; 
-    height: 30px;
-    right: 15px;
-}
-
-.text-with-lines-Discoveries {
-    position: relative;
-    text-align: center;
-}
-  
-.text-with-lines-Discoveries p {
-    position: relative;
-    display: inline-block;
-    padding: 0 56px;
-    font-size: 24px;
-}
-  
-.text-with-lines-Discoveries p::before,
-.text-with-lines-Discoveries p::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    width: calc(200%); 
-    height: 1px;
-    background-color: black;
-}
-  
-.text-with-lines-Discoveries p::before {
-    right: 100%;
-    margin-right: 20px;
-}
-  
-.text-with-lines-Discoveries p::after {
-    left: 100%;
-    margin-left: 20px;
 }
 
 .discoveries-row {
@@ -408,7 +376,7 @@ input[name="point"] {
 
 .scroll-target {
     position: relative;
-    top: -65px; 
+    top: -49px; 
     visibility: hidden;
 } 
 

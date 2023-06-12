@@ -212,8 +212,7 @@ nav ul li {
     align-items: center;
     width: 150px;
     height: 77px;
-    font-family: 'Yellowtail', cursive;
-  }
+}
 
 .sections:hover {
     border-bottom: 4px solid #41ea3b;
@@ -259,13 +258,23 @@ img {
 
 /* Search Icon, Button */
 
+.logo-name {
+    margin-top: -6%;
+    position: absolute;
+    width: 100px;
+    
+    left: 13%;
+    text-decoration: none;
+    color:blue;
+}
+
 .SearchContainer {
     height: 40px;
     top: 16%;
     color: inherit;
     position: absolute;
     margin-top: -1.2%;
-    right: 13%;
+    right: 14%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -313,14 +322,37 @@ img {
 /* Cards */
 
 .container {
-    height: 100%;
-    width: 100%;
+    position: relative;
+    width: 400px;
+    height: 240px;
     cursor: pointer;
     outline: none; 
     box-shadow: 0 0 8px rgb(0, 106, 255);
     margin-right: 20px;
+    overflow: hidden;
+}
+
+.text {
+    padding: 6%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    background-color: rgba(75, 75, 75, 0.7);
+    height: 100%;
+    width: 100%;
+}
+
+.caption h2 {
+    font-size: 17px;
+    margin: 2%;
+    margin-top: 37%;
 }
   
+.caption p {
+    font-size: 13px;
+}
+
 .image-zoom {
     position: relative;
     overflow: hidden;
@@ -334,29 +366,4 @@ img {
   
 .image-zoom:hover img {
     transform: scale(1.1); 
-}
-  
-.caption {
-    position: absolute;
-    bottom: 0;
-    background-color: rgba(75, 75, 75, 0.7);
-    color: #fff;
-    width: 100%;
-    height: 100%;
-}
-  
-.caption h2 {
-    font-size: 18px;
-    margin: 2%;
-}
-  
-.caption p {
-    font-size: 14px;
-}
-
-.text {
-    padding: 6%;
-    position: absolute;
-    bottom: 2%;
-    left: 0;
 }
