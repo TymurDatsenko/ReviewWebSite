@@ -260,8 +260,6 @@ nav ul li {
   }
 }
 
-
-
 @media (min-width: 1024px) {
   .article-grid {
     grid-column-start: 1;

@@ -258,19 +258,25 @@ img {
 
 /* Search Icon, Button */
 
-.logo-name {
-    margin-top: -6%;
-    position: absolute;
-    width: 100px;
-    
-    left: 13%;
-    text-decoration: none;
-    color:blue;
+.footer-distributed .footer-left {
+    margin-top: -5%;
+    padding: 2%;
+    width: 30%;
+}
+
+.footer-distributed h3 {
+    color: #000000;
+    font: normal 36px 'Cookie', cursive;
+    margin: 0;
+}
+
+.footer-distributed h3 span {
+    color: #0062ff;
 }
 
 .SearchContainer {
     height: 40px;
-    top: 16%;
+    top: 21%;
     color: inherit;
     position: absolute;
     margin-top: -1.2%;

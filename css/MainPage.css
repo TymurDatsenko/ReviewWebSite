@@ -36,7 +36,7 @@ header {
     z-index: 7777;
 }
 
-header::before {
+header:before {
     content: "";
     position: absolute;
     top: 0;
@@ -493,46 +493,32 @@ h2 {
 
 /* Culture */
 
-.text-with-lines-Culture {
-    position: relative;
-    text-align: center;
-}
-  
-.text-with-lines-Culture p {
-    position: relative;
-    display: inline-block;
-    padding: 0 80px;
-    font-size: 24px;
-}
-  
-.text-with-lines-Culture p::before,
-.text-with-lines-Culture p::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    width: calc(200%); 
-    height: 1px;
-    background-color: black;
-}
-  
-.text-with-lines-Culture p::before {
-    right: 100%;
-    margin-right: 20px;
-}
-  
-.text-with-lines-Culture p::after {
-    left: 100%;
-    margin-left: 20px;
-}
-
-.culture-row {
+.about-me {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 40px 80px;
+    border-top: 1.7px solid #a0a0a0;
 }
-  
-.culture-row .card-img1 {
-    margin: 20px;
+
+.about-me img {
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.about-me-text h2 {
+    font-size: 30px;
+    color: #333333;
+    margin: 0;
+    margin-right: 84%;
+}
+
+.about-me-text p {
+    font-size: 15px;
+    color: #585858;
+    margin: 10px 0;
 }
 
 /* Culture Cards */
