@@ -25,6 +25,7 @@ body {
 
 main {
     padding: 11%; 
+    margin: 0 auto;
 }
 
 /* Header */
@@ -41,6 +42,7 @@ header {
     display: flex;
     overflow: hidden;
     z-index: 7777;
+    margin: 0 auto;
 }
 
 header::before {
@@ -168,16 +170,18 @@ nav ul li {
 .menubox {
     flex-direction: column;
     top: 80px;
-    left: -346px;
+    left: -100%;
     padding: 25vh 3%;
 	background: rgba(20, 20, 20, 0.5);
 	height: 100vh;
 	position: fixed;
-	transition: 0.4s ease;
+	transition-duration: 0.4s;
+    transition: left 0.4s ease;
+    
 }
 
 .menubox:hover{
-	transition: 0.7s ease;
+	transition-duration: 0.4s;
 }
 
 .menu-item {
@@ -311,31 +315,22 @@ img {
 
 /* Rows of Cards */
 
-.first-row {
+.row {
     display: flex;
-}
-
-.second-row {
-    margin-top: 20px;
-    display: flex;
-}
-
-.third-row {
-    margin-top: 20px;
-    display: flex;
+    flex-wrap: wrap;
 }
 
 /* Cards */
 
 .container {
-    position: relative;
-    width: 400px;
-    height: 240px;
     cursor: pointer;
     outline: none; 
     box-shadow: 0 0 8px rgb(0, 106, 255);
-    margin-right: 20px;
     overflow: hidden;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
 .text {
@@ -347,6 +342,19 @@ img {
     background-color: rgba(75, 75, 75, 0.7);
     height: 100%;
     width: 100%;
+    white-space: normal;
+}
+
+@media screen and (max-width: 375px) {
+    .text {
+      font-size: 12px; /* Подставьте желаемый размер шрифта */
+      width: 100%;
+      text-align: center;
+      top: 5px;
+      left: 50%;
+      transform: translateX(-50%);
+      white-space: normal;
+    }
 }
 
 .caption h2 {
@@ -359,6 +367,14 @@ img {
     font-size: 13px;
 }
 
+.image-container {
+    width: 350px; 
+    height: 233px; 
+    margin-top: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
 .image-zoom {
     position: relative;
     overflow: hidden;
@@ -368,6 +384,9 @@ img {
   
 .image-zoom img {
     transition: transform 0.4s ease;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
 }
   
 .image-zoom:hover img {

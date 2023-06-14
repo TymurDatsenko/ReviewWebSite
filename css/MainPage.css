@@ -159,7 +159,7 @@ nav ul li {
 .menubox {
     flex-direction: column;
     top: 80px;
-    left: -346px;
+    left: -100%;
     padding: 25vh 3%;
 	background: rgba(20, 20, 20, 0.5);
 	height: 100vh;
