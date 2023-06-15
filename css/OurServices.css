@@ -262,19 +262,20 @@ img {
 
 /* Search Icon, Button */
 
-.footer-distributed .footer-left {
+.logo-text .logo-left {
     margin-top: -5%;
     padding: 2%;
     width: 30%;
+    margin-left: 0.5%;
 }
 
-.footer-distributed h3 {
+.logo-text h3 {
     color: #000000;
-    font: normal 36px 'Cookie', cursive;
+    font: normal 3vw 'Cookie', cursive; 
     margin: 0;
 }
 
-.footer-distributed h3 span {
+.logo-text h3 span {
     color: #0062ff;
 }
 
@@ -284,32 +285,32 @@ img {
     color: inherit;
     position: absolute;
     margin-top: -1.2%;
-    right: 14%;
+    right: 13%;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
-    padding-left: 15px;
+    padding-left: 1vw; 
     border: 1px solid #ccc;
 }
-  
+
 .input {
-    width: 170px;
+    width: 17vw; 
     border: none;
     outline: none;
-    font-size: 0.9em;
+    font-size: 0.9vw; 
     caret-color: rgb(255, 81, 0);
 }
-  
+
 .labelforsearch {
     cursor: text;
-    padding: 0px 12px;
+    padding: 0px 1.2vw; 
 }
-  
+
 .searchIcon {
-    width: 13px;
+    width: 1.3vw; 
     fill: rgb(114, 114, 114);
 }
 
@@ -345,15 +346,15 @@ img {
     white-space: normal;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
     .text {
-      font-size: 12px; /* Подставьте желаемый размер шрифта */
-      width: 100%;
-      text-align: center;
-      top: 5px;
-      left: 50%;
-      transform: translateX(-50%);
-      white-space: normal;
+        font-size: 12px;
+        padding: 3%;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        white-space: normal;
     }
 }
 
