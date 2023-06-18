@@ -1,73 +1,121 @@
-@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	list-style: none;
-	text-decoration: none;
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
 }
 
+/* 
+$blue: #29d9d5;
+$black: #111;
+$white: #fff;
+$light-color: #aaa;
+$bg-color: #222;
+$black-bg: rgba(17, 17, 17, .7);
+$border: .2rem solid #29d9d5; 
+*/
+
+/* @mixin grid($val) {
+    display: grid;
+    grid-template-columns: repeat((auto-fit, minmax($val, 1fr)));
+    gap: 1.5rem;
+} */
+
 html {
-    scroll-behavior: smooth;
+    font-size: 62.5%;
     overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9rem;
+}
+
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: rgba(17, 17, 17, .7);
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #29d9d5;
+}
+
+section {
+    padding: 3rem 9%;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-size: 100%;
+    background: #111;
+    overflow-x: hidden;
 }
 
-/* Header */
+.heading {
+    text-align: center;
+    margin-bottom: 2rem;
+}
 
-header {
-    position: fixed;
-    background: url("https://look.com.ua/pic/201908/1920x1080/look.com.ua-352038.jpg");
-    background-size: cover;
+.heading span {
+    color: #29d9d5;
+    font-size: 2rem;
+}
+
+.heading h1 {
+    font-size: 4rem;
     color: #fff;
-    justify-content: center;
-    align-items: center;
-    height: 80px;
-    width: 100%;
-    display: flex;
-    overflow: hidden;
-    z-index: 7777;
 }
 
-header:before {
-    content: "";
-    position: absolute;
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    color: #29d9d5;
+    border: .2rem solid #29d9d5;
+    border-radius: 5rem;
+    cursor: pointer;
+    background: none;
+}
+
+.btn:hover {
+    background: #29d9d5;
+    color: #111;
+}
+
+.header {
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
-    opacity: 0.5;
-    background-color: rgba(23, 96, 164, 1);
-    z-index: -1;
-}
-
-nav {
+    z-index: 1000;
+    background: #222;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 1.5rem 9%;
 }
 
-nav ul {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+.navbar a {
+    font-size: 1.7rem;
+    color: #aaa;
+    display: inline-block;
+    margin: 0 1rem;
 }
 
-nav ul li {
+.navbar a:hover {
+    color: #29d9d5;
+}
+
+ul li {
     display: flex;
     align-items: center;
 }
 
-/* Burger Menu */
-  
 .toggle {
     position: relative;
     width: 40px;
@@ -78,7 +126,7 @@ nav ul li {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    transition-duration: .5s;
+    transition-duration: .3s;
     position: absolute;
     left: 30px;
 }
@@ -96,7 +144,7 @@ nav ul li {
 }
   
 #bar2 {
-    transition-duration: .8s;
+    transition-duration: .3s;
 }
   
 #bar1,#bar3 {
@@ -105,28 +153,28 @@ nav ul li {
   
 #checkbox:checked + .toggle .bars {
     position: absolute;
-    transition-duration: .5s;
+    transition-duration: .3s;
 }
   
 #checkbox:checked + .toggle #bar2 {
     transform: scaleX(0);
-    transition-duration: .5s;
+    transition-duration: .3s;
 }
   
 #checkbox:checked + .toggle #bar1 {
     width: 100%;
     transform: rotate(45deg);
-    transition-duration: .5s;
+    transition-duration: .3s;
 }
   
 #checkbox:checked + .toggle #bar3 {
     width: 100%;
     transform: rotate(-45deg);
-    transition-duration: .5s;
+    transition-duration: .3s;
 }
   
 #checkbox:checked + .toggle {
-    transition-duration: .5s;
+    transition-duration: .3s;
     transform: rotate(180deg);
 }
 
@@ -158,13 +206,13 @@ nav ul li {
 
 .menubox {
     flex-direction: column;
-    top: 80px;
+    top: 78px;
     left: -100%;
     padding: 25vh 3%;
 	background: rgba(20, 20, 20, 0.5);
 	height: 100vh;
 	position: fixed;
-	transition: 0.4s ease;
+	transition: 0.3s ease;
 }
 
 .menubox:hover{
@@ -188,490 +236,297 @@ nav ul li {
 	padding-left: 12px;
 }
 
-/* Sections */
+.btn {
+    margin-top: 0;
+}
 
-.sections {
-    border: 4px solid transparent;
-    background-color: rgba(28, 28, 28, 0);
-    font-family: Arial, sans-serif;
-    font-size: 20px;
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+  
+.logo {
+    font-size: 2.5rem;
     color: #fff;
-    transition: all 0.2s ease;
-    padding-bottom: 4px;
-    white-space: nowrap;
-    overflow: hidden;
-    box-sizing: border-box;
-    cursor: pointer;
-    text-decoration: none;
-    display: flex; 
-    justify-content: center; 
+    font-weight: bolder;
+    text-decoration: none; 
+}
+  
+.img-logo {
+    width: 15%;
+    color: #29d9d5;
+}
+
+.home {
+    margin: 0 auto;
+    margin-top: 9rem;
+    width: 90%;
+    border-radius: 1rem;
+    background: linear-gradient(rgba(17, 17, 17, .7), rgba(17, 17, 17, .7)), url("../img/mountains.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    min-height: 80vh;
+    display: flex;
     align-items: center;
-    width: 150px;
-    height: 77px;
+    justify-content: center;
+    padding-bottom: 5rem;
 }
 
-.sections:hover {
-    border-bottom: 4px solid #41ea3b;
+.content {
+    text-align: center;
 }
 
-.sections:after {
-    content: "";
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-    right: 0;
-    height: 4px;
-    background-color: #38b434;
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
+.content .home {
+    margin-top: 10rem;
 }
 
-.sections:hover:after {
-    transform: scaleX(1);
+.content .home .content span {
+    font-size: 8vw;
 }
 
-.sections:hover>span {
-    transform: translateY(-4px);
+.content .home .content h3 {
+    font-size: 9vw;
 }
 
-.sections span {
-    transition: transform 0.3s ease;
+.content span {
+    font-weight: bolder;
+    color: transparent;
+    -webkit-text-stroke: .1rem #fff;
+    font-size: 4vw;
+    display: block;
+}
+
+.content h3 {
+    font-size: 6vw;
+    color: #fff;
+}
+
+.content p {
+    max-width: 60rem;
+    margin: 1rem auto;
+    font-size: 1.4rem;
+    color: #aaa;
+    line-height: 2;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 5rem;
+}
+
+.about .video-container {
+    flex: 1 1 42rem;
+}
+
+.about .video-container .controls {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.about .video-container .controls span {
     display: inline-block;
-}
-
-.main-logo {
-    margin-top: 10px;
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    right: 30px;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background: #fff;
     cursor: pointer;
+    margin: .7rem;
 }
 
-img {
+.about .video-container .controls span:hover {
+    background: #29d9d5;
+}
+
+.about .video-container video {
+    border-radius: 1rem;
     width: 100%;
 }
 
-/* Main */
-/* Slider */
+.about .content {
+    flex: 1 1 42rem;
+    margin-bottom: 5rem;
+}
 
-main {
-    height: 2000px;
-    background-color: #daecfd;
+.about .content span {
+    font-size: 3rem;
+}
+
+.about .content h3 {
+    color: #fff;
+    font-size: 4rem;
+    margin-top: .5rem;
+}
+
+.about .content p {
+    padding: 1rem 0;
+    font-size: 1.4rem;
+    color: #aaa;
+    line-height: 2;
+}
+
+.destination .box-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    gap: 1.5rem; /* Добавляем пробелы между карточками */
 }
 
-.slider {
-    align-items: center;
-    width: 100%;
-    height: 500px;
+.destination .box-container .box {
+    border-radius: 1rem;
     overflow: hidden;
-    align-self: flex-start;
+    background: #222;
+    flex: 1; /* Равномерно распределить карточки по контейнеру */
+    margin-right: 1.5rem; /* Добавляем правый отступ для создания пробела */
 }
 
-.middle {
-    top: 330px;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.destination .box-container .box:last-child {
+    margin-right: 0; /* Убираем правый отступ у последней карточки */
 }
 
-.slides {
-    width: 300%;
-    height: 100%;
-    display: flex;
-}
-
-input[name="point"] {
-    position: absolute;
-    visibility: hidden;
-}
-
-#company-name {
-    width: max-content;
-    position: absolute;
-    color: white;
-    font-size: 80px;
-    font-family: 'Yellowtail', cursive;
-    left: 50%;
-    top: 40%;
-    transform: translateX(-50%);
-    user-select: none;
-}
-
-.slide {
-    width: 35%;
-    transition: all .6s ease;
-}
-
-.navigation-points {
-    position: absolute;
-    bottom: 16px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-}
-
-#point-1:checked~.s1 {
-    margin-left: 0;
-}
-
-#point-2:checked~.s1 {
-    margin-left: -35%;
-}
-
-#point-3:checked~.s1 {
-    margin-left: -70%;
-}
-
-.bar {
-    height: 8px;
-    width: 30px;
-    margin: 6px;
-    cursor: pointer;
-    background-color: #ffffff;
-    opacity: 0.5;
-    border-radius: 10px;
-    transition: all .4 ease;
-} 
-
-.bar:hover {
-    opacity: 0.8;
+.destination .box-container .box:hover {
     transform: scale(1.1);
 }
 
-/* Discoveries*/
-
-.section-subtitle {
-    display: block;
-    font-size: 0.813rem;
-    margin-bottom: 0.5rem;
-    color: rgb(108, 108, 108);
-    text-align: center;
-}
-
-h2 {
-    margin-top: 10px;
-    text-align: center;
-}
-
-.discoveries-container {
-    margin-top: 550px;
-    justify-content: center;
-}
-
-.discoveries-row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.discoveries-row .cardBox {
-    margin: 10px 10px;
-}
-
-/* Discoveries Cards */
-
-.scroll-target {
-    position: relative;
-    top: -49px; 
-    visibility: hidden;
-} 
-
-.cardBox {
-    width: 250px;
-    height: 300px;
-    position: relative;
+.destination .box-container .box .image{
+    height: 20rem;
     overflow: hidden;
+    width: 100%;
 }
 
-.photo-container{
+.destination .box-container .box .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.destination .box-container .content {
+    padding: 2rem;
     text-align: center;
 }
-  
-.info-card-piva,
-.info-card2,
-.info-card3,
-.info-card4 {
-    width: 95%;
-    height: 95%;
-    border-radius: 20px;
+
+.destination .box-container .content h3 {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.destination .box-container .content p {
+    padding: 1rem 0;
+    font-size: 1.4rem;
+    color: #aaa;
+    line-height: 2;
+}
+
+.destination .box-container .content a {
+    font-size: 1.7rem;
+    color: #29d9d5;
+}
+
+.destination .box-container .content a:hover i{
+    padding-left: 1rem;
+}
+
+.destination .box-container .content a i{
+    padding-right: .5rem;
+}
+
+.services .box-container {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    color: #ffffff;
-    padding: 20px;
-    transition: filter 0.3s ease-in-out;
+    flex-wrap: wrap; /* Позволяет карточкам переноситься на новую строку при нехватке места */
+    justify-content: space-between; /* Равномерно распределяет карточки по контейнеру с пробелами между ними */
+    gap: 1.5rem; /* Добавляем пробелы между карточками */
+}
+
+.services .box-container .box {
+    background: #222;
+    border-radius: 1rem;
+    padding: 3rem;
+    text-align: center;
+    flex: 0 0 calc(33.33% - 1.5rem); /* Распределяет каждую карточку на треть ширины контейнера с учетом отступов */
+    border: .2rem solid ;
+}
+
+.services .box-container .box:hover {
+    border: .2rem solid #29d9d5;
+}
+
+.services .box-container .box i {
+    font-size: 5rem;
+    color: #29d9d5;
+    margin-bottom: 2rem;
+}
+
+.services .box-container .box h3 {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.services .box-container .box p {
+    padding: 1rem 0;
+    font-size: 1.4rem;
+    color: #aaa;
+    line-height: 2;
+}
+
+.gallery .box-container {
+    columns: 3 25rem;
+    column-gap: 1.5rem;
+}
+
+.gallery .box-container .box{
+    margin-bottom: 1rem;
+    break-inside: avoid;
+}
+
+.gallery .box-container .box img {
+    width: 100%;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.gallery .box-container .box span {
+    font-size: 1.4rem;
+    color: #aaa;
+}
+
+.gallery .box-container .box h3 {
+    font-size: 2rem;
+    color: #fff;
+    margin-top: .5rem;
+}
+
+.banner {
+    background: linear-gradient(rgba(17, 17, 17, .7), rgba(17, 17, 17, .7)), url("../img/footer.jpg") no-repeat;
+    background-size: cover;
     background-position: center;
-    background-size: cover;
-    margin-top: 6%;
+    padding: 7rem 0;
+    background-attachment: fixed;
+    text-align-last: center;
 }
 
-.info-card-piva {
-    background-image: url("https://st4.depositphotos.com/14883968/21323/i/600/depositphotos_213239274-stock-photo-landscape-beautiful-piva-lake-mountains.jpg");
-}
-  
-.info-card2 {
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Machu_Picchu%2C_Peru.jpg/1200px-Machu_Picchu%2C_Peru.jpg");
-}
-  
-.info-card3 {
-    background-image: url("https://st.depositphotos.com/1000633/57261/i/600/depositphotos_572618664-stock-photo-panoramic-view-lake-moraine-banff.jpg");
+.banner .content span {
+    font-size: 3rem;
 }
 
-.info-card4 {
-    background-image: url("https://st.depositphotos.com/1035350/1831/i/600/depositphotos_18311415-stock-photo-ginkaku-ji-temple-in-kyoto.jpg");
-}
-  
-.cardBox:hover .info-card-piva,
-.cardBox:hover .info-card2,
-.cardBox:hover .info-card3,
-.cardBox:hover .info-card4 {
-    filter: brightness(0.8); 
-}
-  
-.info-card-piva .h4,
-.info-card2 .h4,
-.info-card3 .h4,
-.info-card4 .h4 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 20px;
-    font-weight: 800;
-    pointer-events: none;
-    opacity: 1;
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-}
-  
-.info-card-piva .card-content .h3,
-.info-card2 .card-content .h3,
-.info-card3 .card-content .h3,
-.info-card4 .card-content .h3 {
-    font-size: 18px;
-    font-weight: 800;
-    margin-bottom: 10px;
-}
-  
-.info-card-piva .card-content p,
-.info-card2 .card-content p,
-.info-card3 .card-content p,
-.info-card4 .card-content p {
-    font-size: 14px;
-    line-height: 1.4em;
-}
-  
-.info-card-piva .card-content,
-.info-card2 .card-content,
-.info-card3 .card-content,
-.info-card4 .card-content {
-    transform: translateY(100%);
-    opacity: 0;
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-    background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 20px;
-    padding: 20px;
-}
-  
-.info-card-piva:hover .card-content,
-.info-card2:hover .card-content,
-.info-card3:hover .card-content,
-.info-card4:hover .card-content {
-    transform: translateY(0);
-    opacity: 1;
-}
-  
-.info-card-piva:hover .h4,
-.info-card2:hover .h4,
-.info-card3:hover .h4,
-.info-card4:hover .h4 {
-    opacity: 0;
+.banner .content h3 {
+    font-size: 4rem;
+    color: #fff;
+    margin-top: 1rem;
+    
 }
 
-/* Culture */
-
-.about-me {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 80px;
-    border-top: 1.7px solid #a0a0a0;
+.banner .content p {
+    max-width: 60rem;
+    margin: 1rem auto;
+    font-size: 1.4rem;
+    color: #aaa;
+    line-height: 2;
 }
-
-.about-me img {
-    width: 500px;
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-.about-me-text h2 {
-    font-size: 30px;
-    color: #333333;
-    margin: 0;
-    margin-right: 84%;
-}
-
-.about-me-text p {
-    font-size: 15px;
-    color: #585858;
-    margin: 10px 0;
-}
-
-/* Culture Cards */
-
-.card-img1 {
-    width: 190px;
-    height: 274px;
-    background: white;
-    padding: .4em;
-    border-radius: 6px;
-}
-  
-.card-image {
-    background-image: url("https://st4.depositphotos.com/14883968/21323/i/600/depositphotos_213239274-stock-photo-landscape-beautiful-piva-lake-mountains.jpg");
-    background-color: rgb(236, 236, 236);
-    width: 100%;
-    height: 60%;
-    border-radius: 6px 6px 0 0;
-    background-size: cover;
-    cursor: pointer;
-}
-  
-.card-image:hover {
-    transform: scale(0.98);
-}
-  
-.category-img1 {
-    text-transform: uppercase;
-    font-size: 0.7em;
-    font-weight: 600;
-    color: rgb(63, 121, 230);
-    padding: 10px 7px 0;
-}
-  
-.category-img1:hover, .category-img2:hover {
-    cursor: pointer;
-}
-  
-.heading {
-    font-weight: 600;
-    color: rgb(88, 87, 87);
-    padding: 7px;
-}
-
-/* Adventures */
-
-.text-with-lines-Adventures {
-    position: relative;
-    text-align: center;
-    margin-top: -1.5%;
-}
-  
-.text-with-lines-Adventures p {
-    position: relative;
-    display: inline-block;
-    padding: 0 58px;
-    font-size: 24px;
-}
-  
-.text-with-lines-Adventures p::before,
-.text-with-lines-Adventures p::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    width: calc(200%); 
-    height: 0.5px;
-    background-color: black;
-}
-  
-.text-with-lines-Adventures p::before {
-    right: 100%;
-    margin-right: 20px;
-}
-  
-.text-with-lines-Adventures p::after {
-    left: 100%;
-    margin-left: 20px;
-}
-
-/* YouTube video */
-
-.video {
-    text-align: center;
-    margin-top: 1%;
-}
-
-/* See More Info Button */
-
-.cta {
-    position: relative;
-    margin: auto;
-    padding: 12px 18px;
-    transition: all 0.2s ease;
-    border: none;
-    background: none;
-    cursor: pointer;
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-   
-.cta:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    border-radius: 50px;
-    width: 45px;
-    height: 45px;
-    transition: all 0.3s ease;
-}
-   
-.cta span {
-    position: relative;
-    font-family: "Ubuntu", sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    letter-spacing: 0.05em;
-    color: #234567;
-}
-   
-.cta svg {
-    position: relative;
-    top: 0;
-    margin-left: 10px;
-    fill: none;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke: #234567;
-    stroke-width: 2;
-    transform: translateX(-5px);
-    transition: all 0.3s ease;
-}
-   
-.cta:hover:before {
-    width: 100%;
-    background: #77d079;
-}
-   
-.cta:hover svg {
-    transform: translateX(0);
-}
-   
-.cta:active {
-    transform: scale(0.95);
-}
-
-/* Footer */
 
 footer {
     bottom: 0;
+    padding-top: 20px;
 }
 
 @media (max-height:800px) {
@@ -681,7 +536,7 @@ footer {
 }
 
 .footer-distributed {
-    background-color: #2d2a30;
+    background-color: rgba(17, 17, 17, .7);;
     box-sizing: border-box;
     width: 100%;
     text-align: left;
@@ -842,44 +697,28 @@ footer {
     .footer-distributed .footer-center i {
         margin-left: 0;
     }
-}    
-
-.error-message {
-	text-align: center;
-	color: rgb(255, 0, 0);
-  	font-size: 14px;
-  	font-weight: bold;
 }  
 
-.my-project-icon {
-    display: block;
-    font-size: 1.5rem;
-    color: #0055ff;
-    margin-bottom: 1rem;
-    text-decoration: none;
-}
-  
-.my-project-button {
-    cursor: pointer;
-    font-size: 15px;
-    margin-top: 100px;
-}
-  
-.my-project-button:hover .button-icon {
-    transform: translateX(0.25rem);
-}
-  
-.my-project-description {
-    margin-bottom: 1rem;
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+
+    .header {
+        padding: 1.5rem 2rem;
+    }
+
+    section {
+        padding: 3rem 2rem;
+    }
 }
 
-.button-link {
-    padding: 0;
-    background-color: transparent;
-    color: #1f69ff;
-}
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
 
-.button-link:hover {
-    background-color: transparent;
-    color: #285fcd;
+    .about .content {
+        font-size: 3.5rem;
+    }
 }

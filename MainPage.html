@@ -1,33 +1,29 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-  <meta name="viewport" card-content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" card-content="IE=edge" />
-  <meta name="viewport" card-content="width=device-width, initial-scale=1.0" />
-  <title> SoarSoal </title>
-  <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
-  <link rel="stylesheet" href="./css/MainPage.css">
-  <link rel="stylesheet" href="./css/Preloader.css"> 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+	<title> SoarSoal </title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  	<link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+	<link rel="stylesheet" href="./css/MainPage.css"/>
+	<link rel="stylesheet" href="./css/Preloader.css"> 
 </head>
-
 <body>
-  <!-- <div id="page">
-    <div id="container">
-        <div id="ring"></div>
-        <div id="ring"></div>
-        <div id="ring"></div>
-        <div id="ring"></div>
-        <div id="h3">Loading...</div>
-    </div>
-  </div> -->
+	<!-- <div id="page">
+		<div id="container">
+			<div id="ring"></div>
+			<div id="ring"></div>
+			<div id="ring"></div>
+			<div id="ring"></div>
+			<div id="h3">Loading...</div>
+		</div>
+	</div> -->
 
-  <header>
-    <nav>
-      <input type="checkbox" id="checkbox">
+    <header class="header">
+
+        <input type="checkbox" id="checkbox">
         <label for="checkbox" class="toggle">
           <div class="bars" id="bar1"></div>
           <div class="bars" id="bar2"></div>
@@ -36,204 +32,324 @@
       
         <ul class="menubox">
           <div class="title"><h1>NAVIGATION</h1></div>
-          <li><a class="menu-item" href="#">News</a></li>
           <li><a class="menu-item" href="OurServices.html">Our Services</a></li>
           <li><a class="menu-item" href="Portofolio.html">About Me</a></li>
           <li><a class="menu-item" href="#contact">Contact Me</a></li>
         </ul>
 
-      <ul>
-        <li>
-          <a class="sections" href="#discoveries">Discoveries</a>
-        </li>
-        <li>
-          <a class="sections" href="#culture">Culture</a>
-        </li>
-        <li>
-          <a class="sections" href="#adventures">Adventures</a>
-        </li>
-      </ul>
-      <a class="main-logo" href="#"><img src="./img/logo.png"/></a>
-    </nav>
-  </header>
+        <div class="logo-container">
+            <img class="img-logo" src="./img/logo.png">
+            <a href="#" class="logo">SoarSoal</a>
+        </div>
 
-  <main>
-    <div class="slider middle">
-      <div class="slides">
-        <input type="radio" name="point" id="point-1" checked />
-        <input type="radio" name="point" id="point-2" />
-        <input type="radio" name="point" id="point-3" />
-        <h1 id="company-name">SoarSoal</h1>
-        <div class="slide s1" id="slide-1"></div>
-        <div class="slide" id="slide-2"></div>
-        <div class="slide" id="slide-3"></div>
-      </div>
-      <div class="navigation-points">
-        <label for="point-1" class="bar"></label>
-        <label for="point-2" class="bar"></label>
-        <label for="point-3" class="bar"></label>
-      </div>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#destination">Destination</a>
+            <a href="#services">Services</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact Me</a>
+        </nav>
+
+        <a href="OurServices.html" class="btn">Our Services</a>
+    </header>
+
+    <section id="home" class="home">
+        <div class="content">
+            <span>Follow us</span>
+            <h3>SoarSoal</h3>
+            <p>
+                SoarSoal a Web Page where you can find information, 
+                photos about interesting, exciting places, as well as reviews about them.
+            </p>
+            <a href="OurServices.html" class="btn">Our Services</a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="video-container">
+            <video src="./video/nature1.mp4" muted autoplay loop class="video"></video>
+            <div class="controls">
+                <span class="control-btn" data-src="./video/nature1.mp4"></span>
+                <span class="control-btn" data-src="./video/nature2.mp4"></span>
+                <span class="control-btn" data-src="./video/nature3.mp4"></span>
+            </div>
+        </div>
+
+        <div class="content">
+            <span>Why choose us?</span>
+            <h3>Natures Majesty Awaits You</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                Vivamus porttitor turpis ac leo. Aliquam ornare wisi eu metus. 
+                Mauris elementum mauris vitae tortor. 
+            </p>
+            <a href="#" class="btn">Our Services</a>
+        </div>
+    </section>
+
+    <section class="destination" id="destination">
+        <div class="heading">
+            <span>Our destinations</span>
+            <h1>Make your destination</h1>
+        </div>
+
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img src="#" alt="">
+                </div>
+                <div class="content">
+                    <h3>Piva(river)</h3>
+                    <p>
+                        Is the river in Montenegro and Bosnia and Herzegovina. 
+                        The river runs through Montenegro for the most of its course length, 
+                        and in its last kilometres represents the border between the two countries...
+                    </p>
+                    <a href="PivaRiver.html">Read more <i class="fas fa-angle-right"></i></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="#" alt="">
+                </div>
+                <div class="content">
+                    <h3>Machu Picchu</h3>
+                    <p>
+                        Is a 15th-century Inca citadel located in the Eastern Cordillera of 
+                        southern Peru on a 2,430-meter (7,970 ft) mountain ridge. Often referred 
+                        to as the "Lost City of the Incas", it is the most familiar...
+                    </p>
+                    <a href="MachuPicchu.html">Read more <i class="fas fa-angle-right"></i></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="./img/#" alt="Image">
+                </div>
+                <div class="content">
+                    <h3>Tuors & Travel</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                        Vivamus porttitor turpis ac leo. Aliquam ornare wisi eu metus. 
+                        Mauris elementum mauris vitae tortor. 
+                    </p>
+                    <a href="#">Read more <i class="fas fa-angle-right"></i></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="./img/#" alt="Image">
+                </div>
+                <div class="content">
+                    <h3>Tuors & Travel</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                        Vivamus porttitor turpis ac leo. Aliquam ornare wisi eu metus. 
+                        Mauris elementum mauris vitae tortor. 
+                    </p>
+                    <a href="#">Read more <i class="fas fa-angle-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="heading">
+            <span>Our services</span>
+            <h1>Countless experiences</h1>
+        </div>
+
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fas-fa-globe"></i>
+                <h3>WorldWide</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Laborum cumque sed quod eius consequuntur, 
+                </p>
+            </div>
+
+            <div class="box">
+                <i class="fas-fa-hiking"></i>
+                <h3>Adventures</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Laborum cumque sed quod eius consequuntur, 
+                </p>
+            </div>
+
+            <div class="box">
+                <i class="fas-fa-utensils"></i>
+                <h3>Food & Drinks</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Laborum cumque sed quod eius consequuntur, 
+                </p>
+            </div>
+
+            <div class="box">
+                <i class="fas-fa-hotels"></i>
+                <h3>Affordable Hotels</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Laborum cumque sed quod eius consequuntur, 
+                </p>
+            </div>
+
+            <div class="box">
+                <i class="fas-fa-wallet"></i>
+                <h3>Affordable Price</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Laborum cumque sed quod eius consequuntur, 
+                </p>
+            </div>
+
+            <div class="box">
+                <i class="fas-fa-headset"></i>
+                <h3>24/7 support</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Laborum cumque sed quod eius consequuntur, 
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="gallery" class="gallery">
+        <div class="heading">
+            <span>Our gallery</span>
+            <h1>We record memories</h1>
+        </div>
+
+        <div class="box-container">
+            
+            <div class="box">
+                <img src="#" alt="Image">
+                <span>Travel Spot</span>
+                <h3>Iceland</h3>
+            </div>
+
+            <div class="box">
+                <img src="#" alt="Image">
+                <span>Travel Spot</span>
+                <h3>Greenland</h3>
+            </div>
+
+            <div class="box">
+                <img src="#" alt="Image">
+                <span>Travel Spot</span>
+                <h3>Alaska</h3>
+            </div>
+
+            <div class="box">
+                <img src="#" alt="Image">
+                <span>Travel Spot</span>
+                <h3>Thailand</h3>
+            </div>
+
+            <div class="box">
+                <img src="#" alt="Image">
+                <span>Travel Spot</span>
+                <h3>Brazil</h3>
+            </div>
+
+            <div class="box">
+                <img src="#" alt="Image">
+                <span>Travel Spot</span>
+                <h3>Maldive</h3>
+            </div>
+
+            <div class="box">
+                <img src="#" alt="Image">
+                <span>Travel Spot</span>
+                <h3>Brazil</h3>
+            </div>
+
+            <div class="box">
+                <img src="#" alt="Image">
+                <span>Travel Spot</span>
+                <h3>Alaska</h3>
+            </div>
+
+            <div class="box">
+                <img src="#" alt="Image">
+                <span>Travel Spot</span>
+                <h3>Maldive</h3>
+            </div>
+        </div>
+    </section>
+
+    <div class="banner">
+
+        <div class="content">
+            <span>Start your adventures</span>
+            <h3>Lets Explore This World</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Repudiandae modi repellendus ea officia temporibus vel 
+                accusantium cum provident odio ratione est rem dolores, 
+                accusamus corrupti animi consectetur at voluptatem beatae.</p>
+            <a href="OurServices.html" class="btn">Our Services</a>
+        </div>
     </div>
 
-    <div class="discoveries-container">
-      <div class="discoveries-helper"></div>
-        <p id="discoveries" class="scroll-target">Scroll-Target</p>
-        <br>
-        <h2 class="section-title">AAA</h2>
-        <span class="section-subtitle">What I have done yet</span>
-    <div class="photo-container">
-      <div class="discoveries-row">
-        <div class="cardBox">
-          <div class="info-card-piva">
-            <div class="card-content">
-              <div class="h3">Piva (river)</div>
-              <p>The Piva is the river in Montenegro and Bosnia and Herzegovina. 
-                The river runs through Montenegro for the most of its course length, and in its last kilometres...</p>
-              <div class="my-project-content">
-                <a href="PivaRiver.html" class="button button-flex buttom-sm button-link my-project-button">
-                  See More
-                  <i class="fa fa-arrow-right button-icon"></i>
-                </a>
-              </div>
-            </div>
+    <footer class="footer-distributed">
+        <div class="footer-left">
+          <h3>Soar<span>Soal</span></h3>
+          <p class="footer-links">
+              <a href="Portofolio.html">About Me</a>
+              |
+              <a href="OurServices.html">Our Services</a>
+              |
+              <a href="#contact">Contact</a>
+          </p>
+    
+          <p id="contact" class="footer-company-name">Copyright &copy; 2023 
+            <strong>SoarSoal</strong> All rights reserved
+          </p>
+        </div>
+    
+        <div class="footer-center">
+    
+          <p class="footer-company-about">
+            <span>Contact Me</span>
+          </p>
+    
+          <div>
+            <i class="fa fa-phone"></i>
+            <p>+(xxx)xxx-xx-xx</p>
+          </div>
+          <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:tdacenko746@gmail.com">tdacenko746@gmail.com</a></p>
           </div>
         </div>
-
-        <div class="cardBox">
-          <div class="info-card2">
-            <div class="card-content">
-              <div class="h3">Machu Picchu</div>
-              <p>Is a 15th-century Inca citadel located in the Eastern Cordillera of southern Peru on a 2,430-meter (7,970 ft) mountain ridge. Often referred to as the...</p>
-              <div class="my-project-content">
-                <a href="MachuPicchu.html" class="button button-flex buttom-sm button-link my-project-button">
-                  See More
-                  <i class="fa fa-arrow-right button-icon"></i>
-                </a>
-              </div>
+    
+        <div class="footer-right">
+          <p class="footer-company-about">
+            <span>About the company</span>
+            <strong>SoarSoal</strong> a Web Page where you can find information, 
+            photos about interesting, 
+            exciting places, as well as reviews about them.
+          </p>
+            <div class="footer-icons">
+              <a target="_blank" href="https://www.facebook.com/profile.php?id=100016057680551"><i class="fa fa-facebook"></i></a>
+              <a target="_blank" href="https://www.instagram.com/_tymur.d/"><i class="fa fa-instagram"></i></a>
+              <a target="_blank" href="https://github.com/TymurDatsenko"><i class="fa fa-github"></i></a>
+              <a target="_blank" href="https://t.me/nfjskw"><i class="fa fa-telegram"></i></a>
             </div>
-          </div>
         </div>
-
-        <div class="cardBox">
-          <div class="info-card3">
-            <div class="card-content">
-              <div class="h3">aaaa</div>
-              <p>This is Pradeep Saran, your tech mate!!! I love you all. Lets make this world a better place for all of us. Keep prospering...Keep learning!!!</p>
-              <div class="my-project-content">
-                <a href="" class="button button-flex buttom-sm button-link my-project-button">
-                  See More
-                  <i class="fa fa-arrow-right button-icon"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      
-        <div class="cardBox">
-          <div class="info-card4">
-            <div class="card-content">
-              <div class="h3">aaaa</div>
-              <p>This is Pradeep Saran, your tech mate!!! I love you all. Lets make this world a better place for all of us. Keep prospering...Keep learning!!!</p>
-              <div class="my-project-content">
-                <a href="" class="button button-flex buttom-sm button-link my-project-button">
-                  See More
-                  <i class="fa fa-arrow-right button-icon"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+      </footer>
 
 
-    <!-- <div class="text-with-lines-Culture">
-      <p id="culture" class="scroll-target">Scroll-Target</p>
-      <br>
-      <p>Culture</p>
-    </div> -->
-
-    <div class="about-me">
-      <div class="about-me-text">
-        <h2>About Me</h2>
-        <p>I am a web developer and I love to create websites. I am a very good developer and I am always looking for new projects. I am a very good developer and I am always looking for new projects.</p>
-      </div>
-      <img src="./img/KL1r9wZz-Cc.jpg" alt="me">
-    </div>
-
-
-    <div class="text-with-lines-Adventures">
-      <p id="adventures" class="scroll-target">Scroll-Target</p>
-      <br>
-      <p>Adventures</p>
-    </div>
-
-    <div class="container_video">
-      <div class="video">
-        <iframe width="662" height="417" class="video" src="https://www.youtube.com/embed/eDqm77tbs2U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      </div>
-    </div>
-
-    <button class="cta">
-      <span><a href="OurServices.html">See more info</a></span>
-      <svg viewBox="0 0 13 10" height="10px" width="15px">
-        <path d="M1,5 L11,5"></path>
-        <polyline points="8 1 12 5 8 9"></polyline>
-      </svg>
-    </button>
-  </main>
-  
-  
-  <footer class="footer-distributed">
-    <div class="footer-left">
-      <h3>Soar<span>Soal</span></h3>
-      <p class="footer-links">
-          <a href="#">News</a>
-          |
-          <a href="Portofolio.html">About Me</a>
-          |
-          <a href="OurServices.html">Our Services</a>
-          |
-          <a href="#contact">Contact</a>
-      </p>
-
-      <p id="contact" class="footer-company-name">Copyright &copy; 2023 
-        <strong>SoarSoal</strong> All rights reserved
-      </p>
-    </div>
-
-    <div class="footer-center">
-
-      <p class="footer-company-about">
-        <span>Contact Me</span>
-      </p>
-
-      <div>
-        <i class="fa fa-phone"></i>
-        <p>+(xxx)xxx-xx-xx</p>
-      </div>
-      <div>
-        <i class="fa fa-envelope"></i>
-        <p><a href="mailto:tdacenko746@gmail.com">tdacenko746@gmail.com</a></p>
-      </div>
-    </div>
-
-    <div class="footer-right">
-      <p class="footer-company-about">
-        <span>About the company</span>
-        <strong>SoarSoal</strong> a Web Page where you can find information, 
-        photos about interesting, 
-        exciting places, as well as reviews about them.
-      </p>
-        <div class="footer-icons">
-          <a target="_blank" href="https://www.facebook.com/profile.php?id=100016057680551"><i class="fa fa-facebook"></i></a>
-          <a target="_blank" href="https://www.instagram.com/_tymur.d/"><i class="fa fa-instagram"></i></a>
-          <a target="_blank" href="https://github.com/TymurDatsenko"><i class="fa fa-github"></i></a>
-          <a target="_blank" href="https://t.me/nfjskw"><i class="fa fa-telegram"></i></a>
-        </div>
-    </div>
-  </footer>
-  <script src="./js/MainPage.js"></script>
-  <script src="./js/Preloader.js"></script>
+	<script src="./js/asd.js" defer></script>
+    <script src="./js/Preloader.js"></script>
 </body>
 </html>
