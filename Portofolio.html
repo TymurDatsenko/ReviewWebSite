@@ -22,30 +22,36 @@
     </div> -->
 
     <!-- Fixed Navbar -->
-    <header class="header" id="header">
-      <nav class="nav container">
-        <a href="MainPage.html" class="nav-back"><img class="main-logo" src="./img/logo.png"/></a>
-        <a href="#" class="nav-logo">My Portofolio</a>
-        <div class="nav-menu" id="nav-menu">
-          <ul class="nav-list grid">
-            <li class="nav-item">
-              <a href="#home" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="#about" class="nav-link">About</a>
-            </li>
-            <li class="nav-item">
-              <a href="#education" class="nav-link">Education</a>
-            </li>
-            <li class="nav-item">
-              <a href="#my-project" class="nav-link">My Projects</a>
-            </li>
-            <li class="nav-item">
-              <a href="#contact" class="nav-link">Contact Me</a>
-            </li>
-          </ul>
-        </div>
+    <header class="header">
+
+      <input type="checkbox" id="checkbox">
+      <label for="checkbox" class="toggle">
+        <div class="bars" id="bar1"></div>
+        <div class="bars" id="bar2"></div>
+        <div class="bars" id="bar3"></div>
+      </label>
+    
+      <ul class="menubox">
+        <div class="title"><h1>NAVIGATION</h1></div>
+        <li><a class="menu-item" href="MainPage.html">Home</a></li>
+        <li><a class="menu-item" href="OurServices.html">Our Services</a></li>
+        <li><a class="menu-item" href="MainPage.html">Contact Me</a></li>
+      </ul>
+
+      <div class="logo-container">
+          <img class="img-logo" src="./img/logo.png">
+          <a href="#" class="logo">SoarSoal</a>
+      </div>
+
+      <nav class="navbar">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#education">Education</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact Me</a>
       </nav>
+
+      <a href="OurServices.html" class="btn">Our Services</a>
     </header>
 
     <!-- Main Content -->
@@ -68,7 +74,7 @@
             <div class="home-img">
               <img
                 id="my_picture_linkedin"
-                src="./img/KL1r9wZz-Cc.jpg"
+                src="./img/me2.jpg"
               />
             </div>
 
@@ -87,7 +93,7 @@
         <span class="section-subtitle">Student</span>
 
         <div class="about-container container grid">
-          <img id="about-image" src="./img/gYPFSHvJjv4.jpg">
+          <img id="about-image" src="./img/me1.jpg">
           
           <div class="about-data">
             <p>
@@ -151,7 +157,7 @@
       </section>
 
       <!-- My Project -->
-      <section class="my-project-section section" id="my-project">
+      <section class="my-project-section section" id="projects">
         <h2 class="section-title">My Projects</h2>
         <span class="section-subtitle">What I have done yet</span>
         <div class="my-project-container container grid">
@@ -195,7 +201,7 @@
       </section>
 
       <!-- Contact Me -->
-      <section class="contact section" id="contact">
+      <section class="contact section">
         <h2 class="section-title">Contact me</h2>
         <span class="section-subtitle">Get more info</span>
       
@@ -229,7 +235,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer id="contact" class="footer">
       <div class="footer-bg">
         <div class="footer-container container grid">
           <ul class="footer-links">

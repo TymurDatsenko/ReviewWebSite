@@ -2,21 +2,45 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
 * {
-  box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: all .2s linear;
 }
 
 html {
+  overflow-x: hidden;
   scroll-behavior: smooth;
+  scroll-padding-top: 0rem;
+}
+
+html::-webkit-scrollbar {
+  width: 0.6rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: rgba(17, 17, 17, .7);
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #29d9d5;
+}
+
+.img-logo {
+  width: 1%;
 }
 
 body {
   margin: 0 0 3rem 0;
   font-family: "Josefin Sans", sans-serif;
   font-size: 0.938rem;
-  background-color: #07001a;
+  background: #111;
   color: #717178;
 }
 
@@ -91,18 +115,195 @@ img {
   gap: 1.5rem;
 }
 
-.header {
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  z-index: 100;
-  background-color: #07001a;
-}
-
 /* Nav */
 
-.nav {
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  color: #29d9d5;
+  border: .2rem solid #29d9d5;
+  border-radius: 5rem;
+  cursor: pointer;
+  background: none;
+}
+
+.btn:hover {
+  background: #29d9d5;
+  color: #111;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: #222;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 9%;
+  height: 7%;
+}
+
+.navbar a {
+  /* font-size: 1.7rem; */
+  color: #aaa;
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+.navbar a:hover {
+  color: #29d9d5;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+}
+
+.toggle {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition-duration: .3s;
+}
+
+.bars {
+  width: 100%;
+  height: 4px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+}
+
+#checkbox {
+  display: none;
+  opacity: 0;
+}
+
+#bar2 {
+  transition-duration: .3s;
+}
+
+#bar1,#bar3 {
+  width: 70%;
+}
+
+#checkbox:checked + .toggle .bars {
+  position: absolute;
+  transition-duration: .3s;
+}
+
+#checkbox:checked + .toggle #bar2 {
+  transform: scaleX(0);
+  transition-duration: .3s;
+}
+
+#checkbox:checked + .toggle #bar1 {
+  width: 100%;
+  transform: rotate(45deg);
+  transition-duration: .3s;
+}
+
+#checkbox:checked + .toggle #bar3 {
+  width: 100%;
+  transform: rotate(-45deg);
+  transition-duration: .3s;
+}
+
+#checkbox:checked + .toggle {
+  transition-duration: .3s;
+  transform: rotate(180deg);
+}
+
+#checkbox:checked~#checkbox>span {
+  transform: rotate(45deg);
+}
+
+#checkbox:checked~#checkbox>span::before {
+  top: 0;
+  transform: rotate(0);
+}
+
+#checkbox:checked~#checkbox>span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+#checkbox:checked~.menubox {
+  visibility: visible;
+  left: 0;
+}
+
+.title h1{
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 40px;
+  color: #fcfffc;
+  margin-bottom: 30px;
+}
+
+.menubox {
+  flex-direction: column;
+  top: 75px;
+  left: -100%;
+  padding: 25vh 3%;
+  background: rgba(20, 20, 20, 0.5);
+  height: 100vh;
+  position: fixed;
+  transition: 0.3s ease;
+}
+
+.menubox:hover{
+  transition: 0.7s ease;
+}
+
+.menu-item {
+  transition-duration: .25s;
+  border-left: 2px solid #76d4ff;
+  transition: 0.2s ease;
+  padding-left: 6px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 25px;
+  color: #fcfffc;
+  margin: 10px 0;
+}
+
+.menu-item:hover {
+  border-left: 2px solid #F5B7C7;
+  transition: 0.2s ease;
+  padding-left: 12px;
+}
+
+.btn {
+  margin-top: 0;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.4rem;
+  color: #fff;
+  font-weight: bolder;
+  text-decoration: none; 
+}
+
+.img-logo {
+  width: 13%;
+  color: #29d9d5;
+  align-self: center;
+}
+
+/* .nav {
   display: flex;
   max-width: 1200px;
   height: 3rem;
@@ -147,7 +348,7 @@ img {
 
 .nav-link:hover {
   color: #003396;
-}
+} */
 
 /* Home */
 
@@ -247,7 +448,7 @@ img {
 /* About */
 
 #about-image {
-  width: 200px;
+  width: 100%;
   border-radius: 2rem;
   justify-self: center;
   align-items: center;
