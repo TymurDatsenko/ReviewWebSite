@@ -253,6 +253,7 @@ ul li {
     border: 1px solid #ccc;
     background-color: #fff;
     justify-content: flex-end;
+    margin-top: -7.3rem;
 }
 
 .input {

@@ -262,7 +262,7 @@ ul li {
     margin-top: 9rem;
     width: 90%;
     border-radius: 1rem;
-    background: linear-gradient(rgba(17, 17, 17, .7), rgba(17, 17, 17, .7)), url("../img/mountains.jpg") no-repeat;
+    background: linear-gradient(rgba(17, 17, 17, .7), rgba(17, 17, 17, .7)), url("https://img.freepik.com/free-photo/beautiful-aerial-shot-fronalpstock-mountains-switzerland-beautiful-pink-blue-sky_181624-9315.jpg?w=1060&t=st=1687178206~exp=1687178806~hmac=eb6673be256fec35a88592968b9ab5eabbb0be3db46958e0faf419ba9c9221d7") no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -497,7 +497,7 @@ ul li {
 }
 
 .banner {
-    background: linear-gradient(rgba(17, 17, 17, .7), rgba(17, 17, 17, .7)), url("../img/footer.jpg") no-repeat;
+    background: linear-gradient(rgba(17, 17, 17, .7), rgba(17, 17, 17, .7)), url("https://img.freepik.com/free-photo/seljalandsfoss-waterfall-during-sunset-beautiful-waterfall-iceland_335224-596.jpg?w=1060&t=st=1687178521~exp=1687179121~hmac=6bb2e89faf4a174514c073bc1d90b6a1c574e8eacbcaa9c733a0ee971c378524") no-repeat;
     background-size: cover;
     background-position: center;
     padding: 7rem 0;
