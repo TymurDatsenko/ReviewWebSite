@@ -11,27 +11,11 @@
     transition: all .2s linear;
 }
 
-/* 
-$blue: #29d9d5;
-$black: #111;
-$white: #fff;
-$light-color: #aaa;
-$bg-color: #222;
-$black-bg: rgba(17, 17, 17, .7);
-$border: .2rem solid #29d9d5; 
-*/
-
-/* @mixin grid($val) {
-    display: grid;
-    grid-template-columns: repeat((auto-fit, minmax($val, 1fr)));
-    gap: 1.5rem;
-} */
-
 html {
     font-size: 62.5%;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    scroll-padding-top: 9rem;
+    scroll-padding-top: 7rem;
 }
 
 html::-webkit-scrollbar {
@@ -497,7 +481,7 @@ ul li {
 }
 
 .banner {
-    background: linear-gradient(rgba(17, 17, 17, .7), rgba(17, 17, 17, .7)), url("https://img.freepik.com/free-photo/aerial-view-seashore-near-lamai-beach-koh-samui-thailand_335224-1385.jpg?w=1380&t=st=1687251335~exp=1687251935~hmac=9d08bdfb4dc10944430eab9b7704df57e87fb8b66bd4582153a76249ea9d67f6") no-repeat;
+    background: linear-gradient(rgba(17, 17, 17, .7), rgba(17, 17, 17, .7)), url("https://img.freepik.com/free-photo/seljalandsfoss-waterfall-during-sunset-beautiful-waterfall-iceland_335224-596.jpg?w=1060&t=st=1687431829~exp=1687432429~hmac=8b69fdce5104af2613aa5aec6ae5b4bdbfa8d449184fab3f69da6673e033660b") no-repeat;
     background-size: cover;
     background-position: center;
     padding: 7rem 0;

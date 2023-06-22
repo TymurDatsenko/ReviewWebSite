@@ -179,7 +179,7 @@ ul li {
   top: 0;
   left: -100%;
   padding: 25vh 3%;
-  background: #222;
+  background: rgba(20, 20, 20, 0.768);
   height: 100vh;
   position: fixed;
   transition: 0.3s ease;
