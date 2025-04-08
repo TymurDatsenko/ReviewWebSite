@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/Portofolio.css" />
-    <link rel="stylesheet" href="./css/Preloader.css"> 
-    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/Portofolio.css" />
+    <link rel="stylesheet" href="../css/Preloader.css"> 
+    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
     <title>About Me - SoalSoal</title>
   </head>
   <body>
@@ -33,13 +33,13 @@
     
       <ul class="menubox">
         <div class="title"><h1>NAVIGATION</h1></div>
-        <li><a class="menu-item" href="MainPage.html">Home</a></li>
-        <li><a class="menu-item" href="OurServices.html">Our Services</a></li>
-        <li><a class="menu-item" href="MainPage.html#contact">Contact Me</a></li>
+        <li><a class="menu-item" href="../html/MainPage.html">Home</a></li>
+        <li><a class="menu-item" href="../html/OurServices.html">Our Services</a></li>
+        <li><a class="menu-item" href="../html/MainPage.html#contact">Contact Me</a></li>
       </ul>
 
       <div class="logo-container">
-          <img class="img-logo" src="./img/logo.png">
+          <img class="img-logo" src="../img/logo.png">
           <a href="#" class="logo">SoarSoal</a>
       </div>
 
@@ -48,10 +48,9 @@
           <a href="#about">About</a>
           <a href="#education">Education</a>
           <a href="#projects">Projects</a>
-          <a href="#contact">Contact Me</a>
       </nav>
 
-      <a href="OurServices.html" class="btn">Our Services</a>
+      <a href="../html/OurServices.html" class="btn">Our Services</a>
     </header>
 
     <!-- Main Content -->
@@ -74,7 +73,7 @@
             <div class="home-img">
               <img
                 id="my_picture_linkedin"
-                src="./img/me2.jpg"
+                src="../img/me2.jpg"
               />
             </div>
 
@@ -94,7 +93,7 @@
         <span class="section-subtitle">Student</span>
 
         <div class="about-container container grid">
-          <img id="about-image" src="./img/me1.jpg">
+          <img id="about-image" src="../img/me1.jpg">
           
           <div class="about-data">
             <p>
@@ -202,39 +201,6 @@
           </div>
         </div>
       </section>
-
-      <!-- Contact Me -->
-      <section class="contact section">
-        <h2 class="section-title">Contact me</h2>
-        <span class="section-subtitle">Get more info</span>
-      
-        <div class="contact-container container">
-          <form action="" class="contact-form grid" onsubmit="return validateForm(event)">
-            <div class="contact-inputs grid">
-              <div class="contact-content">
-                <label for="fullname" class="contact-label">Full Name</label>
-                <input id="fullname" name="fullname" type="text" class="contact-input" />
-              </div>
-      
-              <div class="contact-content">
-                <label for="email" class="contact-label">Email Address</label>
-                <input id="email" name="email"  class="contact-input" />
-              </div>
-            </div>
-      
-            <div class="contact-content">
-              <label for="message" class="contact-label">Message</label>
-              <textarea id="message" name="message" cols="0" rows="8" class="contact-input"></textarea>
-            </div>
-      
-            <div id="error-message" class="error-message"></div>
-      
-            <div>
-              <center><button type="submit" class="button button-flex">Submit</button></center>
-            </div>
-          </form>
-        </div>
-      </section>
     </main>
 
     <!-- Footer -->
@@ -254,9 +220,6 @@
             <li>
               <a href="#projects" class="footer-link">Projects</a>
             </li>
-            <li>
-              <a href="#contact" class="footer-link">Contact</a>
-            </li>
           </ul>
 
           <div class="footer-social-container">
@@ -273,7 +236,6 @@
         </div>
       </div>
     </footer>
-    <script src="./js/Portofolio.js"></script>
-    <script src="./js/Preloader.js"></script>
+    <script src="../js/Preloader.js"></script>
   </body>
 </html>

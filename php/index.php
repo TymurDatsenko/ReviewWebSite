@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title> SoarSoal </title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  	<link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+	<link rel="stylesheet" href="../css/MainPage.css"/>
+	<link rel="stylesheet" href="../css/Preloader.css"> 
+</head>
+<body>
+    
+<?php
+session_start();
+if(!isset($_SESSION["username"])){
+header("Location: login.php");
+exit(); }
+?>
+
+	<!-- <div id="page">
+		<div id="container">
+			<div id="ring"></div>
+			<div id="ring"></div>
+			<div id="ring"></div>
+			<div id="ring"></div>
+			<div id="h3">Loading...</div>
+		</div>
+	</div> -->
+
+    <header class="header">
+
+        <input type="checkbox" id="checkbox">
+        <label for="checkbox" class="toggle">
+          <div class="bars" id="bar1"></div>
+          <div class="bars" id="bar2"></div>
+          <div class="bars" id="bar3"></div>
+        </label>
+      
+        <ul class="menubox">
+          <div class="title"><h1>NAVIGATION</h1></div>
+          <li><a class="menu-item" href="../html/OurServices.html">Our Services</a></li>
+          <li><a class="menu-item" href="../html/Portofolio.html">About Me</a></li>
+          <li><a class="menu-item" href="#contact">Contact Me</a></li>
+        </ul>
+
+        <div class="logo-container">
+            <img class="img-logo" src="../img/logo.png">
+            <a href="#" class="logo">SoarSoal</a>
+        </div>
+
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#destination">Destination</a>
+            <a href="#services">Services</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact Me</a>
+        </nav>
+
+        <a href="../html/OurServices.html" class="btn">Our Services</a>
+    </header>
+
+    <section class="home">
+        <div class="content">
+            <span>Follow us</span>
+            <h3>SoarSoal</h3>
+            <p>
+                SoarSoal is a website where you can get details, 
+                pictures, and reviews about unique, thrilling locations.
+            </p>
+            <a href="../html/OurServices.html" class="btn">Our Services</a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="video-container">
+            <video src="../video/nature1.mp4" muted autoplay loop class="video"></video>
+            <div class="controls">
+                <span class="control-btn" data-src="../video/nature1.mp4"></span>
+                <span class="control-btn" data-src="../video/nature2.mp4"></span>
+                <span class="control-btn" data-src="../video/nature3.mp4"></span>
+            </div>
+        </div>
+
+        <div class="content">
+            <span>Why choose us?</span>
+            <h3>Natures Majesty Awaits You</h3>
+            <p>
+                By choosing our website, "Natures Majesty Awaits You," 
+                you can embark on a journey of exploration, discover hidden gems, 
+                and immerse yourself in the awe-inspiring beauty of unique and thrilling locations. 
+                We strive to be your go-to resource for all things related to extraordinary travel experiences.
+            </p>
+            <a href="../html/OurServices.html" class="btn">Our Services</a>
+        </div>
+    </section>
+
+    <section class="destination" id="destination">
+        <div class="heading">
+            <span>Our destinations</span>
+            <h1>Make your destination</h1>
+        </div>
+
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img src="https://st4.depositphotos.com/14883968/21323/i/600/depositphotos_213239274-stock-photo-landscape-beautiful-piva-lake-mountains.jpgg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Piva(river)</h3>
+                    <p>
+                        Is the river in Montenegro and Bosnia and Herzegovina. 
+                        The river runs through Montenegro for the most of its course length, 
+                        and in its last kilometres represents the border between the two countries...
+                    </p>
+                    <a href="../html/PivaRiver.html">Read more <i class="fa fa-angle-right"></i></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Machu_Picchu%2C_Peru.jpg/1200px-Machu_Picchu%2C_Peru.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Machu Picchu</h3>
+                    <p>
+                        Is a 15th-century Inca citadel located in the Eastern Cordillera of 
+                        southern Peru on a 2,430-meter (7,970 ft) mountain ridge. Often referred 
+                        to as the "Lost City of the Incas", it is the most familiar...
+                    </p>
+                    <a href="../html/MachuPicchu.html">Read more <i class="fa fa-angle-right"></i></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="https://file.mahalo.cz/2013/04/pamukkale.jpg" alt="Image">
+                </div>
+                <div class="content">
+                    <h3>Pamukkale</h3>
+                    <p>
+                        Meaning "cotton castle" in Turkish is a natural site in Denizli Province in southwestern Turkey. 
+                        The area is famous for a carbonate mineral left by the flowing of thermal spring water.
+                        It is located in Turkey's Inner...
+                    </p>
+                    <a href="../html/Pamukkale.html">Read more <i class="fa fa-angle-right"></i></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="https://cdn.audleytravel.com/800/571/79/1002413-pitons-saint-lucia.webp" alt="Image">
+                </div>
+                <div class="content">
+                    <h3>Pitons (Saint Lucia)</h3>
+                    <p>
+                        Are two mountainous volcanic plugs, volcanic spires, located in Saint Lucia. Gros Piton
+                        is 798.25 m (2,618.9 ft) high and Petit Piton is 743 m (2,438 ft) high; they are linked 
+                        by the Piton Mitan...
+                    </p>
+                    <a href="../html/Pitons.html">Read more <i class="fa fa-angle-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="heading">
+            <span>Our services</span>
+            <h1>Countless experiences</h1>
+        </div>
+
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fa fa-globe"></i>
+                <h3>WorldWide</h3>
+                <p>
+                    Embark on a global adventure like no other with SoarSoal, 
+                    the premier website that unveils a treasure trove of details.
+                </p>
+            </div>
+
+            <div class="box">
+                <i class="fa fa-wpexplorer"></i>
+                <h3>Adventures</h3>
+                <p>
+                    Prepare to release your inner adventurer with SoarSoal, 
+                    the top destination for people looking 
+                    for unique experiences.
+                </p>
+            </div>
+
+                <div class="box">
+                <i class="fa fa-headphones"></i>
+                <h3>24/7 support</h3>
+                <p>
+                    SoarSoal values responsiveness and customer happiness. 
+                    Our dedication to providing 24/7 help demonstrates our dedication to providing 
+                    excellent service whenever you need it.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="gallery" class="gallery">
+        <div class="heading">
+            <span>Our gallery</span>
+            <h1>We record memories</h1>
+        </div>
+
+        <div class="box-container">
+            
+            <div class="box">   
+                <img target="_blank" src="https://img.freepik.com/free-photo/vertical-shot-white-swan-swimming-lake-hallstatt_181624-35059.jpg?w=360&t=st=1687207647~exp=1687208247~hmac=70d31c67af70960d3c35be97f84b882aaf3fd48c031716b83004419ee945c25c" alt="Image">
+                <span>Travel Spot</span>
+                <h3>1</h3>
+            </div>
+
+            <div class="box">
+                <img src="https://img.freepik.com/free-photo/wet-vietnam-mountain-flow-stream-rural_1417-1357.jpg?w=1060&t=st=1687207684~exp=1687208284~hmac=81bbd5def6417cf0211bd23cac7e99a005f6b3f1623363699b5aac8375050025" alt="Image">
+                <span>Travel Spot</span>
+                <h3>2</h3>
+            </div>
+
+            <div class="box">
+                <img src="https://img.freepik.com/free-photo/brown-horse-grazing-field-sunny-day_181624-30520.jpg?w=360&t=st=1687210074~exp=1687210674~hmac=cf21efe23707ea9ae42c0e01cefd1cba94c5515b452bb5a11f939881178a43fb" alt="Image">
+                <span>Travel Spot</span>
+                <h3>3</h3>
+            </div>
+
+            <div class="box">
+                <img src="https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg?w=1060&t=st=1687430960~exp=1687431560~hmac=4ab4c8c8d443d7de828ef973131c5ebedb9d9f1fbfaff679faf37c50299a918b" alt="Image">
+                <span>Travel Spot</span>
+                <h3>4</h3>
+            </div>
+
+            <div class="box">
+                <img src="https://img.freepik.com/free-photo/vertical-shot-curvy-road-forest-covered-yellowing-trees-dried-leaves-autum_181624-58749.jpg?w=360&t=st=1687208244~exp=1687208844~hmac=81d609f17ff939c9f7e5034941e9580c20cc084798f60c32ed0ae070e218138f" alt="Image">
+                <span>Travel Spot</span>
+                <h3>5</h3>
+            </div>
+
+            <div class="box">
+                <img src="https://img.freepik.com/free-photo/colorful-majestic-waterfall-national-park-forest-during-autumn_554837-661.jpg?w=1060&t=st=1687209223~exp=1687209823~hmac=1d10aa07083ff483fe103d6ab3ca91441b2fe3364a1e3d7a49b9e7641273935b" alt="Image">
+                <span>Travel Spot</span>
+                <h3>6</h3>
+            </div>
+
+            <div class="box">
+                <img src="https://img.freepik.com/free-photo/beautiful-aerial-shot-fronalpstock-mountains-switzerland-beautiful-pink-blue-sky_181624-9315.jpg?w=1060&t=st=1687430746~exp=1687431346~hmac=936fd35538a4fb7ce3f372c11d5528b82cdc0553c17c2e60e8baa764ce697d20" alt="Image">
+                <span>Travel Spot</span>
+                <h3>7</h3>
+            </div>
+
+            <div class="box">
+                <img src="https://img.freepik.com/free-photo/vertical-shot-palm-trees-sandy-beach_181624-49124.jpg?w=360&t=st=1687209900~exp=1687210500~hmac=8bbe5ca3f4c6be51ebffe1235922d8251ce3389ce1974c2e224b50b5d504918e" alt="Image">
+                <span>Travel Spot</span>
+                <h3>8</h3>
+            </div>
+
+            <div class="box">
+                <img src="https://img.freepik.com/free-photo/breathtaking-swiss-alps-with-green-trees-snow-capped-mountain-tops_181624-24256.jpg?w=1060&t=st=1687431021~exp=1687431621~hmac=c6056dae62e8a510cb18713fd53c3c61900257f775a7e64f455af6873c1099b4" alt="Image">
+                <span>Travel Spot</span>
+                <h3>9</h3>
+            </div>
+
+            <div class="box">
+                <img src="https://img.freepik.com/free-photo/landscape-with-mountain-river-flowing-through-mountain-forest-switzerland-alps_186202-4944.jpg?w=360&t=st=1687210139~exp=1687210739~hmac=f990ed56561e59b68025abf340e4f08f98864df4673f86abb90e58477233bb93" alt="Image">
+                <span>Travel Spot</span>
+                <h3>10</h3>
+            </div>
+
+            
+        </div>
+    </section>
+
+    <div class="banner">
+
+        <div class="content">
+            <span>Start your adventures</span>
+            <h3>Lets Explore This World</h3>
+            <p>We believe in providing a seamless user experience. 
+                Our website is designed to be user-friendly, making it 
+                easy for you to navigate through different locations, access information and 
+                view images. We prioritize simplicity and clarity, 
+                ensuring that you can find the details you need without any hassle.</p>
+            <a href="../html/OurServices.html" class="btn">Our Services</a>
+        </div>
+    </div>
+
+    <footer class="footer-distributed">
+        <div class="footer-left">
+          <h3>Soar<span>Soal</span></h3>
+          <p class="footer-links">
+              <a href="../html/Portofolio.html">About Me</a>
+              |
+              <a href="../html/OurServices.html">Our Services</a>
+              |
+              <a href="#contact">Contact</a>
+          </p>
+    
+          <p  id="contact" class="footer-company-name">Copyright &copy; 2023 
+            <strong>SoarSoal</strong> All rights reserved
+          </p>
+        </div>
+    
+        <div class="footer-center">
+    
+          <p class="footer-company-about">
+            <span>Contact Me</span>
+          </p>
+    
+          <div>
+            <i class="fa fa-phone"></i>
+            <p>+(420)736 707 571</p>
+          </div>
+          <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:datsenko.tymur@gmail.com">datsenko.tymur@gmail.com</a></p>
+          </div>
+        </div>
+    
+        <div class="footer-right">
+          <p class="footer-company-about">
+            <span>About the company</span>
+            <strong>SoarSoal</strong> is a website where you can get details, 
+            pictures, and reviews about unique, thrilling locations.
+          </p>
+            <div class="footer-icons">
+              <a target="_blank" href="https://www.facebook.com/profile.php?id=100016057680551"><i class="fa fa-facebook"></i></a>
+              <a target="_blank" href="https://www.instagram.com/_tymur.d/"><i class="fa fa-instagram"></i></a>
+              <a target="_blank" href="https://github.com/TymurDatsenko"><i class="fa fa-github"></i></a>
+              <a target="_blank" href="https://t.me/nfjskw"><i class="fa fa-telegram"></i></a>
+            </div>
+        </div>
+      </footer>
+
+
+	<script src="../js/MainPage.js" defer></script>
+    <script src="../js/Preloader.js"></script>
+</body>
+</html>
