@@ -280,7 +280,6 @@ exit(); }
     </section>
 
     <div class="banner">
-
         <div class="content">
             <span>Start your adventures</span>
             <h3>Lets Explore This World</h3>
