@@ -464,16 +464,7 @@ ul li {
 .row {
   display: flex;
   flex-wrap: wrap;  
-  /* margin-left: 15%; */
 }
-
-/* @media (min-width: 1920px) {
-  .row {
-    display: flex;
-    flex-wrap: wrap;  
-    margin-left: 11%;
-  }
-} */
 
 .review-grid {
   display: flex;
@@ -491,29 +482,6 @@ ul li {
   font-size: 2.25rem; 
   color: #000000; 
 }
-
-/* @media (max-width: 768px) {
-  .review {
-    padding-top: 10%;
-    padding-left: 52%;
-    font-size: 2.25rem; 
-    color: #000000; 
-  }
-
-  .review-grid {
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-  }
-}
-
-@media (min-width: 1920px) {
-  .review {
-    padding-left: 11%;
-    font-size: 2.25rem; 
-    color: #000000; 
-  }
-} */
 
 .line-review {
   position: relative;
